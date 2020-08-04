@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.example.sportappmaximus.ui.home.HomeFragment"
         android:label="@string/title_home_training"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_homeExerciseFragment"
+            app:destination="@id/homeExerciseFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_progress"
@@ -34,4 +38,9 @@
         android:name="com.example.sportappmaximus.ui.store.StoreFragment"
         android:label="@string/title_store"
         tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/homeExerciseFragment"
+        android:name="com.example.sportappmaximus.ui.exercise.HomeExerciseFragment"
+        tools:layout="@layout/fragment_home_exercise"
+        android:label="HomeExerciseFragment" />
 </navigation>
