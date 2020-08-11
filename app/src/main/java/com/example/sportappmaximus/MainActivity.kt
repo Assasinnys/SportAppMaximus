@@ -1,6 +1,7 @@
 package com.example.sportappmaximus
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -16,7 +17,11 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         val navController = findNavController(R.id.nav_host_fragment)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_progress, R.id.navigation_chat, R.id.navigation_settings, R.id.navigation_store
+                R.id.navigation_home,
+                R.id.navigation_progress,
+                R.id.navigation_chat,
+                R.id.navigation_settings,
+                R.id.navigation_store
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -25,5 +30,13 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     override fun onSupportNavigateUp(): Boolean {
         return findNavController(R.id.nav_host_fragment).navigateUp()
+    }
+
+    fun hideNavigationBar() {
+        nav_view.visibility = View.GONE
+    }
+
+    fun showNavigationBar() {
+        nav_view.visibility = View.VISIBLE
     }
 }

@@ -14,6 +14,7 @@ import com.example.sportappmaximus.R
 import com.example.sportappmaximus.adapter.HomeRecyclerViewAdapter
 import com.example.sportappmaximus.model.ExerciseModel
 import com.example.sportappmaximus.util.EXERCISE_KEY
+import com.example.sportappmaximus.util.mainActivity
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
@@ -34,5 +35,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     EXERCISE_KEY to exercise))
             }
         }
+        mainActivity().showNavigationBar()
     }
 }
