@@ -11,6 +11,7 @@ import com.example.sportappmaximus.R
 import com.example.sportappmaximus.adapter.ChatRecyclerViewAdapter
 import com.example.sportappmaximus.util.CHAT_TYPE_KEY
 import com.example.sportappmaximus.util.chatAdapter
+import com.example.sportappmaximus.util.lastItem
 import com.example.sportappmaximus.util.mainActivity
 import kotlinx.android.synthetic.main.fragment_chat_window.*
 
@@ -34,7 +35,8 @@ class ChatWindowFragment : Fragment(R.layout.fragment_chat_window) {
         }
 
         chatWindowViewModel.text.observe(viewLifecycleOwner, Observer {
-            rv_chat_window.chatAdapter().setData(it)
+            chatAdapter().setData(it)
+            rv_chat_window.scrollToPosition(chatAdapter().lastItem())
         })
 
         btn_send.setOnClickListener {

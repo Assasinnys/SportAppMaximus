@@ -12,7 +12,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="55dp"
         app:layout_constraintBottom_toTopOf="@+id/ll_text_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
