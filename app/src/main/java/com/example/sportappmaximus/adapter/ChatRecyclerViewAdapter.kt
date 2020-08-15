@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.R
 import kotlinx.android.synthetic.main.item_chat_window_recycler.view.*
 
-class ChatRecyclerViewAdapter(private var chatList: List<Pair<String, String>> = emptyList()) : RecyclerView.Adapter<ChatRecyclerViewAdapter.ChatViewHolder>() {
+class ChatRecyclerViewAdapter(private var chatList: List<Pair<String, String>> = emptyList()) :
+    RecyclerView.Adapter<ChatRecyclerViewAdapter.ChatViewHolder>() {
 
     class ChatViewHolder(private val root: View) : RecyclerView.ViewHolder(root) {
         fun bind(data: Pair<String, String>) {
@@ -22,7 +23,8 @@ class ChatRecyclerViewAdapter(private var chatList: List<Pair<String, String>> =
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
-        val root = LayoutInflater.from(parent.context).inflate(R.layout.item_chat_window_recycler, parent, false)
+        val root = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_chat_window_recycler, parent, false)
         return ChatViewHolder(root)
     }
 

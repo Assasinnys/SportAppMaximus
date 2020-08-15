@@ -12,6 +12,7 @@ class ChatWindowViewModel : ViewModel() {
     val text: LiveData<List<Pair<String, String>>> = _text
 
     fun notifyMessageSent(message: String) {
-        _text.value = _text.value?.plus(listOf<Pair<String, String>>("You" to message))
+        if (message.trim().isNotEmpty())
+            _text.value = _text.value?.plus(listOf("You" to message))
     }
 }
