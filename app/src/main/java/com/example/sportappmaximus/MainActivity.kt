@@ -3,6 +3,7 @@ package com.example.sportappmaximus
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -34,9 +35,25 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     fun hideNavigationBar() {
         nav_view.visibility = View.GONE
+        clearFragmentMargin()
     }
 
     fun showNavigationBar() {
         nav_view.visibility = View.VISIBLE
+        applyFragmentMargin()
+    }
+
+    private fun clearFragmentMargin() {
+        val params = fragment_container.layoutParams as ConstraintLayout.LayoutParams
+        if (params.bottomMargin != 0)
+            fragment_container.layoutParams = params.apply { bottomMargin = 0 }
+    }
+
+    private fun applyFragmentMargin() {
+        val params = fragment_container.layoutParams as ConstraintLayout.LayoutParams
+        if (params.bottomMargin == 0)
+            fragment_container.layoutParams = params.apply {
+                bottomMargin = resources.getDimension(R.dimen.fragment_container_vertical_margin).toInt()
+            }
     }
 }

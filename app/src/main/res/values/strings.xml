@@ -44,4 +44,6 @@
     <string name="title_store">Store</string>
     <string name="title_home_ex_placeholder">Home Training</string>
 
+    <string name="tt">TT</string>
+    <string name="tp">TP</string>
 </resources>
