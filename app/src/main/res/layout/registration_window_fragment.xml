@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/beginnerAthlete">
+        tools:src="@drawable/beginnerAthletes">
 
     </ImageButton>
 

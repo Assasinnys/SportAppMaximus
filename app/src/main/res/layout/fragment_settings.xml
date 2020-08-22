@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:text="TextView"
+            android:text="@string/personal_data"
             app:layout_constraintStart_toStartOf="@+id/textInputEditText"
             app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
 
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tf_input_name">
+            tools:ignore="MissingConstraints" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText"
@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
             android:hint="@string/add_user_personal_information"
             android:inputType="textPersonName"
             android:maxLength="30"
@@ -44,12 +45,11 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            android:text="@string/pass_confirmation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.454" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
@@ -57,6 +57,7 @@
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="550dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
+
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/avatarImageView"
                 android:gravity="center"
@@ -87,14 +88,12 @@
 
             <EditText
                 android:id="@+id/nameEditTextView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginLeft="13dp"
-                android:layout_marginTop="15dp"
-                android:layout_toRightOf="@+id/nameTextView"
+                android:layout_toEndOf="@+id/nameTextView"
                 android:gravity="center"
-                android:text="@string/name" />
+                android:text="Вася" />
 
             <TextView
                 android:id="@+id/surnameTextView"
@@ -108,29 +107,57 @@
                 android:gravity="center"
                 android:text="@string/surname" />
 
+            <EditText
+                android:id="@+id/surnameEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/surnameTextView"
+                android:gravity="center"
+                android:text="Пупкин" />
+
             <TextView
                 android:id="@+id/ageTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/surnameTextView"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/avatarImageView"
+                android:layout_toEndOf="@+id/avatarImageView"
                 android:gravity="center"
                 android:text="@string/age" />
 
+            <EditText
+                android:id="@+id/ageEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_toEndOf="@+id/ageTextView"
+                android:gravity="center"
+                android:text="20" />
+
             <TextView
-                android:id="@+id/followingTextView"
+                android:id="@+id/verifiedTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ageTextView"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/avatarImageView"
+                android:layout_toEndOf="@+id/avatarImageView"
                 android:gravity="center"
-                android:text="following" />
+                android:text="@string/verified" />
+
+            <EditText
+                android:id="@+id/verifiedEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="120dp"
+                android:layout_toEndOf="@+id/verifiedTextView"
+                android:gravity="center"
+                android:text="Да" />
 
             <View
                 android:id="@+id/divider"
@@ -149,9 +176,13 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="158dp"
-            tools:layout_editor_absoluteY="403dp" />
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="159dp"
+            android:text="@string/save_changes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

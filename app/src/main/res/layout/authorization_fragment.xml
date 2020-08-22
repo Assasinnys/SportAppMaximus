@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <?xml version="1.0" encoding="utf-8"?>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -74,19 +73,19 @@
             app:layout_constraintTop_toBottomOf="@+id/tf_input_surname" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/facebookButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginEnd="24dp"
             android:scaleType="centerCrop"
             android:src="@drawable/facebook"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintEnd_toStartOf="@+id/vkButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_check_in" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/vkButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginStart="24dp"
@@ -94,12 +93,12 @@
             android:scaleType="centerCrop"
             android:src="@drawable/vk"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintEnd_toStartOf="@+id/googleButton"
+            app:layout_constraintStart_toEndOf="@+id/facebookButton"
             app:layout_constraintTop_toBottomOf="@+id/btn_check_in" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/googleButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginStart="24dp"
@@ -107,7 +106,7 @@
             android:src="@drawable/google1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toEndOf="@+id/vkButton"
             app:layout_constraintTop_toBottomOf="@+id/btn_check_in" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
