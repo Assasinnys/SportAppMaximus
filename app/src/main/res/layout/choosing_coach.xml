@@ -84,7 +84,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Макар" />
+            tools:text="Егор" />
 
         <TextView
             android:id="@+id/surname2"
@@ -99,7 +99,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Колос" />
+            tools:text="Радченко" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

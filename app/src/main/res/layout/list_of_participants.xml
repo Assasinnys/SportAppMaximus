@@ -36,7 +36,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image1"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Ирина" />
 
         <TextView
             android:id="@+id/surname"
@@ -51,7 +51,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image1"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Телеш" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -84,7 +84,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Андрей" />
 
         <TextView
             android:id="@+id/surname2"
@@ -99,7 +99,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Титович" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -132,7 +132,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image3"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Анастасия" />
 
         <TextView
             android:id="@+id/surname3"
@@ -147,7 +147,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image3"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Весёлкина" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -180,7 +180,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image4"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Снежана" />
 
         <TextView
             android:id="@+id/surname4"
@@ -195,7 +195,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image4"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Аркадьевна" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -228,7 +228,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Всеволод" />
 
         <TextView
             android:id="@+id/surname5"
@@ -243,7 +243,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Корков" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -276,7 +276,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image6"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Антон" />
 
         <TextView
             android:id="@+id/surname6"
@@ -291,7 +291,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image6"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Мухин" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -324,7 +324,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/image7"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Жопа" />
+            tools:text="Виктор" />
 
         <TextView
             android:id="@+id/surname7"
@@ -339,7 +339,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/image7"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ручкина" />
+            tools:text="Полевиков" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
