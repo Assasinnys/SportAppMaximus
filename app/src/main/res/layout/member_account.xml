@@ -43,16 +43,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/avatarImageView" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/pass_confirmation"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
         <ImageView
             android:id="@+id/avatarImageView"
             android:layout_width="150dp"
@@ -175,18 +165,6 @@
             android:layout_alignParentBottom="true"
             tools:layout_editor_absoluteX="32dp"
             tools:layout_editor_absoluteY="0dp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="159dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="159dp"
-            android:text="@string/save_changes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
