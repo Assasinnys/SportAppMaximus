@@ -1,4 +1,6 @@
 package com.example.sportappmaximus
 
-class RegistrationFragment {
+import androidx.fragment.app.Fragment
+
+class RegistrationFragment : Fragment(R.layout.fragment_user_registration) {
 }

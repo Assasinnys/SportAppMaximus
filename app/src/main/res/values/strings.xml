@@ -8,12 +8,12 @@
 
     <string name="settings_reverse_title">Reverse sort</string>
 
-    <string name="add_user_hint_name">Name of user</string>
-    <string name="add_user_password">Password</string>
+    <string name="hint_user_name">Enter your username</string>
+    <string name="hint_user_password">Enter your password</string>
     <string name="add_user_personal_information"> Personal information</string>
     <string name="add_user_password_check">Password check</string>
     <string name="add_user_hint_gender">Gender</string>
-    <string name="add_user_btn_add">Add user</string>
+    <string name="login_user_btn_login">Sign In</string>
     <string name="add_user_check_in">Register now</string>
     <string name="add_user_pass_confirmation">Pass confirmation</string>
     <string name="err_empty_field">Empty field</string>
