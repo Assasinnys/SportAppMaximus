@@ -8,26 +8,29 @@
 
     <ImageButton
         android:id="@+id/img_btn_trainer"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:src="@drawable/personal_trainer_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_user"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/personal_trainer_logo">
+        tools:src="@drawable/personal_trainer_logo"
+        tools:ignore="ContentDescription">
 
     </ImageButton>
 
     <ImageButton
         android:id="@+id/img_btn_user"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/beginner_athlete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_btn_trainer"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/beginner_athletes">
+        tools:src="@drawable/beginner_athletes"
+        tools:ignore="ContentDescription">
 
     </ImageButton>
 

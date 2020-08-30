@@ -2,109 +2,104 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/asd"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.fragment.AddNewUserFragment">
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/add_user_check_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_input_name"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/test"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:layout_marginTop="16dp"
-            android:paddingVertical="8dp"
-            android:text="@string/add_user_check_in"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
+            android:hint="@string/hint_user_name"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tf_input_name"
-            style="@style/TextInputLayoutStyle"
-            android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_input_pass"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_input_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:hint="@string/hint_user_password"
+            android:inputType="textPassword"
+            android:maxLength="30" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint_user_name"
-                android:inputType="textPersonName"
-                android:maxLength="20" />
-        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tf_input_pass"
-            style="@style/TextInputLayoutStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tf_input_name">
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/login_user_btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_input_pass" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="59dp"
-                android:hint="@string/hint_user_password"
-                android:inputType="textPersonName"
-                android:maxLength="30" />
+    <ImageButton
+        android:id="@+id/facebookButton"
+        style="@style/SocialNetworkIcon"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vkButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        tools:ignore="ContentDescription" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+    <ImageButton
+        android:id="@+id/vkButton"
+        style="@style/SocialNetworkIcon"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_vk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/googleButton"
+        app:layout_constraintStart_toEndOf="@+id/facebookButton"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        tools:ignore="ContentDescription" />
 
-        <Button
-            android:id="@+id/btn_sign_in"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:layout_marginTop="16dp"
-            android:paddingVertical="8dp"
-            android:text="@string/login_user_btn_login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tf_input_pass" />
-
-        <ImageButton
-            android:id="@+id/facebookButton"
-            style="@style/SocialNetworkIcon"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_facebook"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/vkButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_register"
-            tools:ignore="ContentDescription" />
-
-        <ImageButton
-            android:id="@+id/vkButton"
-            style="@style/SocialNetworkIcon"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_vk"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/googleButton"
-            app:layout_constraintStart_toEndOf="@+id/facebookButton"
-            app:layout_constraintTop_toBottomOf="@+id/btn_register"
-            tools:ignore="ContentDescription" />
-
-        <ImageButton
-            android:id="@+id/googleButton"
-            style="@style/SocialNetworkIcon"
-            android:layout_marginStart="24dp"
-            android:src="@drawable/ic_google"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/vkButton"
-            app:layout_constraintTop_toBottomOf="@+id/btn_register"
-            tools:ignore="ContentDescription" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/googleButton"
+        style="@style/SocialNetworkIcon"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vkButton"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
