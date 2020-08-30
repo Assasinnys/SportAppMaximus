@@ -31,7 +31,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.horizontal_bar), "horizontal bar")
             )) { position, exercise ->
                 Toast.makeText(context, "Position $position, text: ${exercise.text}", Toast.LENGTH_SHORT).show()
-                findNavController().navigate(R.id.action_navigation_home_to_homeExerciseFragment, bundleOf(
+                findNavController().navigate(R.id.action_navigation_home_to_home_exercise_fragment, bundleOf(
                     EXERCISE_KEY to exercise))
             }
         }

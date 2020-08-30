@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add_user" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tf_input_name"
@@ -36,7 +36,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tf_input_surname"
+        android:id="@+id/tf_input_pass"
         style="@style/TextInputLayoutStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tf_input_surname">
+        app:layout_constraintTop_toBottomOf="@+id/tf_input_pass">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tf_input_age" />
 
     <Button
-        android:id="@+id/btn_add_user"
+        android:id="@+id/btn_sign_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/default_margin"

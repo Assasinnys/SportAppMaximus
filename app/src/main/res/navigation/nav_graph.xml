@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/authorization_fragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.sportappmaximus.ui.home.HomeFragment"
+        android:label="@string/title_home_ex_placeholder"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_home_exercise_fragment"
+            app:destination="@id/home_exercise_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_progress"
+        android:name="com.example.sportappmaximus.ui.progress.ProgressFragment"
+        android:label="@string/title_progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.sportappmaximus.ui.chat.ChatFragment"
+        android:label="@string/title_chat"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_navigation_chat_to_chatWindowFragment"
+            app:destination="@id/chat_window_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.sportappmaximus.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.example.sportappmaximus.ui.store.StoreFragment"
+        android:label="@string/title_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/home_exercise_fragment"
+        android:name="com.example.sportappmaximus.ui.exercise.HomeExerciseFragment"
+        android:label="HomeExerciseFragment"
+        tools:layout="@layout/fragment_home_exercise" />
+
+    <fragment
+        android:id="@+id/chat_window_fragment"
+        android:name="com.example.sportappmaximus.ui.chat.ChatWindowFragment"
+        android:label="ChatWindowFragment"
+        tools:layout="@layout/fragment_chat_window" />
+
+    <fragment
+        android:id="@+id/authorization_fragment"
+        android:name="com.example.sportappmaximus.ui.authorization.AuthorizationFragment"
+        android:label="AuthorizationFragment"
+        tools:layout="@layout/fragment_authorization">
+        <action
+            android:id="@+id/action_authorization_fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_authorization_fragment_to_registration_main_fragment"
+            app:destination="@id/registration_main_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_main_fragment"
+        android:name="com.example.sportappmaximus.ui.authorization.RegistrationMainFragment"
+        android:label="registration_main_fragment"
+        tools:layout="@layout/fragment_registration_main" >
+        <action
+            android:id="@+id/action_registration_main_fragment_to_registration_trainer_fragment"
+            app:destination="@id/registration_trainer_fragment" />
+        <action
+            android:id="@+id/action_registration_main_fragment_to_registration_user_fragment"
+            app:destination="@id/registration_user_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_trainer_fragment"
+        android:name="com.example.sportappmaximus.ui.authorization.RegistrationTrainerFragment"
+        android:label="Registration Trainer"
+        tools:layout="@layout/fragment_registration_trainer" >
+        <action
+            android:id="@+id/action_registration_trainer_fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_user_fragment"
+        android:name="com.example.sportappmaximus.ui.authorization.RegistrationUserFragment"
+        android:label="Registration User"
+        tools:layout="@layout/fragment_registration_user" >
+        <action
+            android:id="@+id/action_registration_user_fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+</navigation>
