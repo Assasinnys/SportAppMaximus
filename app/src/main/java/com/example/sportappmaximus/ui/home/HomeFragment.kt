@@ -3,7 +3,6 @@ package com.example.sportappmaximus.ui.home
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -30,7 +29,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.dumbbell), "dumbbell"),
                 ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.horizontal_bar), "horizontal bar")
             )) { position, exercise ->
-                Toast.makeText(context, "Position $position, text: ${exercise.text}", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_navigation_home_to_home_exercise_fragment, bundleOf(
                     EXERCISE_KEY to exercise))
             }

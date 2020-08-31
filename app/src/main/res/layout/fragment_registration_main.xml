@@ -16,9 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/personal_trainer_logo"
-        tools:ignore="ContentDescription">
-
-    </ImageButton>
+        tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/img_btn_user"
@@ -30,8 +28,6 @@
         app:layout_constraintStart_toEndOf="@+id/img_btn_trainer"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/beginner_athletes"
-        tools:ignore="ContentDescription">
-
-    </ImageButton>
+        tools:ignore="ContentDescription"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

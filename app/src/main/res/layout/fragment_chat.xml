@@ -6,35 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ui.chat.ChatFragment">
 
-    <TextView
-        android:id="@+id/tt"
+    <ImageButton
+        android:id="@+id/img_btn_trainer_chat"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_tt"
-        android:gravity="center"
-        android:textSize="100sp"
-        android:textColor="@android:color/white"
-        android:text="@string/tt"
-        android:textAlignment="center"
+        android:layout_height="0dp"
+        android:src="@drawable/personal_trainer_logo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tp"
+        app:layout_constraintEnd_toStartOf="@+id/img_btn_user_chat"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/personal_trainer_logo"
+        tools:ignore="ContentDescription"/>
 
-    <TextView
-        android:id="@+id/tp"
+    <ImageButton
+        android:id="@+id/img_btn_user_chat"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_tp"
-        android:gravity="center"
-        android:textSize="100sp"
-        android:textColor="@android:color/black"
-        android:text="@string/tp"
-        android:textAlignment="center"
+        android:layout_height="0dp"
+        android:src="@drawable/beginner_athlete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tt"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/img_btn_trainer_chat"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/beginner_athletes"
+        tools:ignore="ContentDescription"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

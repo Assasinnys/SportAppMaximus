@@ -16,10 +16,10 @@ class ChatFragment : Fragment(R.layout.fragment_chat) {
         super.onViewCreated(view, savedInstanceState)
         mainActivity().showNavigationBar()
 
-        tt.setOnClickListener {
+        img_btn_trainer_chat.setOnClickListener {
             navigateToChatWindow(true)
         }
-        tp.setOnClickListener {
+        img_btn_user_chat.setOnClickListener {
             navigateToChatWindow(false)
         }
     }

@@ -46,19 +46,19 @@
     <fragment
         android:id="@+id/home_exercise_fragment"
         android:name="com.example.sportappmaximus.ui.exercise.HomeExerciseFragment"
-        android:label="HomeExerciseFragment"
+        android:label="Home Exercises"
         tools:layout="@layout/fragment_home_exercise" />
 
     <fragment
         android:id="@+id/chat_window_fragment"
         android:name="com.example.sportappmaximus.ui.chat.ChatWindowFragment"
-        android:label="ChatWindowFragment"
+        android:label="Chat"
         tools:layout="@layout/fragment_chat_window" />
 
     <fragment
         android:id="@+id/authorization_fragment"
         android:name="com.example.sportappmaximus.ui.authorization.AuthorizationFragment"
-        android:label="AuthorizationFragment"
+        android:label="Authorization"
         tools:layout="@layout/fragment_authorization">
         <action
             android:id="@+id/action_authorization_fragment_to_navigation_home"
@@ -71,7 +71,7 @@
     <fragment
         android:id="@+id/registration_main_fragment"
         android:name="com.example.sportappmaximus.ui.authorization.RegistrationMainFragment"
-        android:label="registration_main_fragment"
+        android:label="Registration"
         tools:layout="@layout/fragment_registration_main" >
         <action
             android:id="@+id/action_registration_main_fragment_to_registration_trainer_fragment"
