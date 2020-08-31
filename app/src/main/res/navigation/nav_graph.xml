@@ -88,7 +88,8 @@
         tools:layout="@layout/fragment_registration_trainer" >
         <action
             android:id="@+id/action_registration_trainer_fragment_to_navigation_home"
-            app:destination="@id/navigation_home" />
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/authorization_fragment" />
     </fragment>
 
     <fragment
@@ -98,7 +99,8 @@
         tools:layout="@layout/fragment_registration_user" >
         <action
             android:id="@+id/action_registration_user_fragment_to_navigation_home"
-            app:destination="@id/navigation_home" />
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/authorization_fragment" />
     </fragment>
 
 </navigation>

@@ -31,3 +31,13 @@ fun Fragment.areFieldsValid(viewList: List<TextInputLayout>): Boolean {
 
     return isValid
 }
+
+fun Fragment.isPasswordsEquals(pass: TextInputLayout, confirmPass: TextInputLayout): Boolean {
+    return if (pass.editText?.text.toString() != confirmPass.editText?.text.toString()) {
+        confirmPass.apply {
+            isErrorEnabled = true
+            error = getString(R.string.err_pass_not_equals)
+        }
+        false
+    } else true
+}
