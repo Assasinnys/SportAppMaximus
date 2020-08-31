@@ -18,14 +18,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image1"
+            android:id="@+id/imageParticipants1"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p1"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/nameParticipants"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,12 +34,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image1"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Ирина" />
 
         <TextView
-            android:id="@+id/surname"
+            android:id="@+id/surnameParticipants"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image1"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Телеш" />
 
@@ -66,14 +66,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image2"
+            android:id="@+id/imageParticipants2"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p2"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name2"
+            android:id="@+id/nameParticipants2"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,12 +82,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image2"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Андрей" />
 
         <TextView
-            android:id="@+id/surname2"
+            android:id="@+id/surnameParticipants2"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image2"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Титович" />
 
@@ -114,14 +114,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image3"
+            android:id="@+id/imageParticipants3"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p3"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name3"
+            android:id="@+id/nameParticipants3"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,12 +130,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image3"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Анастасия" />
 
         <TextView
-            android:id="@+id/surname3"
+            android:id="@+id/surnameParticipants3"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image3"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Весёлкина" />
 
@@ -162,14 +162,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image4"
+            android:id="@+id/imageParticipants4"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p4"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name4"
+            android:id="@+id/nameParticipants4"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -178,12 +178,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image4"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Снежана" />
 
         <TextView
-            android:id="@+id/surname4"
+            android:id="@+id/surnameParticipants4"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image4"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Аркадьевна" />
 
@@ -210,14 +210,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image5"
+            android:id="@+id/imageParticipants5"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p5"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name5"
+            android:id="@+id/nameParticipants5"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,12 +226,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image5"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Всеволод" />
 
         <TextView
-            android:id="@+id/surname5"
+            android:id="@+id/surnameParticipants5"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image5"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Корков" />
 
@@ -258,14 +258,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image6"
+            android:id="@+id/imageParticipants6"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p6"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name6"
+            android:id="@+id/nameParticipants6"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -274,12 +274,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image6"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Антон" />
 
         <TextView
-            android:id="@+id/surname6"
+            android:id="@+id/surnameParticipants6"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image6"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Мухин" />
 
@@ -306,14 +306,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image7"
+            android:id="@+id/imageParticipants7"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/p7"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name7"
+            android:id="@+id/nameParticipants7"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -322,12 +322,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image7"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Виктор" />
 
         <TextView
-            android:id="@+id/surname7"
+            android:id="@+id/surnameParticipants7"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -337,11 +337,23 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image7"
+            app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Полевиков" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_chat_participants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="8dp"
+        android:text="Перейти в общий чат"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_input_gender_trainer" />
 
 </LinearLayout>
 

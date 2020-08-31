@@ -18,14 +18,14 @@
     tools:ignore="MissingConstraints">
 
     <ImageView
-        android:id="@+id/image1"
+        android:id="@+id/imageCoach1"
         android:layout_width="70dp"
         android:layout_height="70dp"
         app:srcCompat="@drawable/t1"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/nameCoach"
         style="@style/DefaultMargin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,12 +34,12 @@
         android:textColor="@android:color/black"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/image1"
+        app:layout_constraintStart_toEndOf="@+id/imageCoach1"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Илья" />
 
     <TextView
-        android:id="@+id/surname"
+        android:id="@+id/surnameCoach"
         style="@style/DefaultMargin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_message"
-        app:layout_constraintStart_toEndOf="@+id/image1"
+        app:layout_constraintStart_toEndOf="@+id/imageCoach1"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Киселенко" />
 
@@ -66,14 +66,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image2"
+            android:id="@+id/imageCoach2"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/t2"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name2"
+            android:id="@+id/nameCoach2"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,12 +82,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image2"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach2"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Егор" />
 
         <TextView
-            android:id="@+id/surname2"
+            android:id="@+id/surnameCoach2"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image2"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach2"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Радченко" />
 
@@ -114,14 +114,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image3"
+            android:id="@+id/imageCoach3"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/t3"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name3"
+            android:id="@+id/nameCoach3"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,12 +130,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image3"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach3"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Дмитрий" />
 
         <TextView
-            android:id="@+id/surname3"
+            android:id="@+id/surnameCoach3"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image3"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach3"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Зенеич" />
 
@@ -162,14 +162,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image4"
+            android:id="@+id/imageCoach4"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/t4"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name4"
+            android:id="@+id/nameCoach4"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -178,12 +178,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image4"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach4"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Юля" />
 
         <TextView
-            android:id="@+id/surname4"
+            android:id="@+id/surnameCoach4"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image4"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach4"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Змушко" />
 
@@ -210,14 +210,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/image5"
+            android:id="@+id/imageCoach5"
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/t5"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/name5"
+            android:id="@+id/nameCoach5"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,12 +226,12 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image5"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach5"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Катенька" />
 
         <TextView
-            android:id="@+id/surname5"
+            android:id="@+id/surnameCoach5"
             style="@style/DefaultMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_message"
-            app:layout_constraintStart_toEndOf="@+id/image5"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach5"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Анушкина" />
 

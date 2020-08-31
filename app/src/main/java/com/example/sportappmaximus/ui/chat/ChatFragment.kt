@@ -17,17 +17,14 @@ class ChatFragment : Fragment(R.layout.fragment_chat) {
         mainActivity().showNavigationBar()
 
         img_btn_trainer_chat.setOnClickListener {
-            navigateToChatWindow(true)
+            findNavController().navigate(
+            R.id.action_navigation_chat_to_trainersChatListWindowScreen
+            )
         }
         img_btn_user_chat.setOnClickListener {
-            navigateToChatWindow(false)
+            findNavController().navigate(
+                R.id.action_navigation_chat_to_participantChatScreenFragment
+            )
         }
-    }
-
-    private fun navigateToChatWindow(isTrainerChat: Boolean) {
-        findNavController().navigate(
-            R.id.action_navigation_chat_to_chatWindowFragment,
-            bundleOf(CHAT_TYPE_KEY to isTrainerChat)
-        )
     }
 }
