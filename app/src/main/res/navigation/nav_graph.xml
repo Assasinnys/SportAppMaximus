@@ -28,7 +28,7 @@
         tools:layout="@layout/fragment_chat">
         <action
             android:id="@+id/action_navigation_chat_to_participantChatScreenFragment"
-            app:destination="@id/participantChatScreenFragment" />
+            app:destination="@id/participant_chat_screen_fragment" />
         <action
             android:id="@+id/action_navigation_chat_to_trainersChatListWindowScreen"
             app:destination="@id/trainers_chat_list_fragment" />
@@ -106,16 +106,16 @@
             app:popUpTo="@id/authorization_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/participantChatScreenFragment"
-        android:name="com.example.sportappmaximus.ui.chat.ParticipantsChatListWindowFragment"
-        android:label="ParticipantChatScreenFragment"
+        android:id="@+id/participant_chat_screen_fragment"
+        android:name="com.example.sportappmaximus.ui.chat.ParticipantsChatListFragment"
+        android:label="Choose a Participant To Chat With"
         tools:layout="@layout/fragment_list_participants">
         <action
-            android:id="@+id/action_participantChatScreenFragment_to_chat_window_fragment"
+            android:id="@+id/action_participant_chat_screen_fragment_to_chat_window_fragment"
             app:destination="@id/chat_window_fragment" />
         <action
-            android:id="@+id/action_participantChatScreenFragment_to_participantChatWidowFragment"
-            app:destination="@id/participantChatWidowFragment" />
+            android:id="@+id/action_participant_chat_screen_fragment_to_participant_chat_widow_fragment"
+            app:destination="@id/participant_chat_widow_fragment" />
     </fragment>
     <fragment
         android:id="@+id/trainer_info_fragment"
@@ -135,9 +135,9 @@
             app:destination="@id/chat_window_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/participantChatWidowFragment"
-        android:name="com.example.sportappmaximus.ui.chat.ParticipantChatWidowFragment"
-        android:label="ParticipantChatWidowFragment"
+        android:id="@+id/participant_chat_widow_fragment"
+        android:name="com.example.sportappmaximus.ui.chat.ParticipantInfoFragment"
+        android:label="About Participant"
         tools:layout="@layout/fragment_member_account" />
 
 </navigation>

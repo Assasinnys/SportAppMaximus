@@ -72,18 +72,19 @@
                 android:gravity="center"
                 android:text="@string/name"
                 app:layout_constraintStart_toEndOf="@+id/avatarImageView"
-                app:layout_constraintTop_toBottomOf="@+id/divider" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/nameEditTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/nameTextView"
                 android:gravity="center"
                 android:text="Илья"
                 app:layout_constraintStart_toEndOf="@+id/nameTextView"
-                app:layout_constraintTop_toBottomOf="@+id/tf_personal_information" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/surnameTextView"

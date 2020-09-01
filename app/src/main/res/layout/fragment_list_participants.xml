@@ -36,7 +36,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Ирина" />
+            android:text="Ирина" />
 
         <TextView
             android:id="@+id/surnameParticipants"
@@ -48,10 +48,9 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Телеш" />
+            android:text="Телеш" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -84,7 +83,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Андрей" />
+            android:text="Андрей" />
 
         <TextView
             android:id="@+id/surnameParticipants2"
@@ -96,10 +95,9 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Титович" />
+            android:text="Титович" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -132,7 +130,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Анастасия" />
+            android:text="Анастасия" />
 
         <TextView
             android:id="@+id/surnameParticipants3"
@@ -144,15 +142,15 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Весёлкина" />
+            android:text="Весёлкина" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/p4"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:background="@drawable/item_background"
         android:layout_margin="4dp"
@@ -180,7 +178,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Снежана" />
+            android:text="Снежана" />
 
         <TextView
             android:id="@+id/surnameParticipants4"
@@ -192,10 +190,9 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Аркадьевна" />
+            android:text="Аркадьевна" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -228,7 +225,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Всеволод" />
+            android:text="Всеволод" />
 
         <TextView
             android:id="@+id/surnameParticipants5"
@@ -240,10 +237,9 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Корков" />
+            android:text="Корков" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -276,7 +272,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Антон" />
+            android:text="Антон" />
 
         <TextView
             android:id="@+id/surnameParticipants6"
@@ -288,15 +284,15 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Мухин" />
+            android:text="Мухин" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/p7"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:background="@drawable/item_background"
         android:layout_margin="4dp"
@@ -324,7 +320,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Виктор" />
+            android:text="Виктор" />
 
         <TextView
             android:id="@+id/surnameParticipants7"
@@ -336,10 +332,9 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Полевиков" />
+            android:text="Полевиков" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
