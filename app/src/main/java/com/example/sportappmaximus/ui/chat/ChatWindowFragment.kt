@@ -9,21 +9,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.R
 import com.example.sportappmaximus.adapter.ChatRecyclerViewAdapter
-import com.example.sportappmaximus.util.CHAT_TYPE_KEY
-import com.example.sportappmaximus.util.chatAdapter
-import com.example.sportappmaximus.util.lastItem
-import com.example.sportappmaximus.util.mainActivity
+import com.example.sportappmaximus.util.*
 import kotlinx.android.synthetic.main.fragment_chat_window.*
 
 class ChatWindowFragment : Fragment(R.layout.fragment_chat_window) {
 
     private val chatWindowViewModel: ChatWindowViewModel by viewModels()
-    private var isTrainerChat: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            isTrainerChat = it.getBoolean(CHAT_TYPE_KEY)
+            val name = it.getString(NAME, "")
+            val surname = it.getString(SURNAME, "")
+            chatWindowViewModel.notifyInfo(name, surname)
         }
     }
 

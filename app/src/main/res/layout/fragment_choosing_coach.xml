@@ -1,68 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/t1"
-    android:layout_width="match_parent"
-    android:background="@drawable/item_background"
-    android:layout_margin="4dp"
-    android:paddingBottom="4dp"
-    android:elevation="4dp"
-    android:layout_height="wrap_content"
-    tools:ignore="MissingConstraints">
-
-    <ImageView
-        android:id="@+id/imageCoach1"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:srcCompat="@drawable/t1"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/nameCoach"
-        style="@style/DefaultMargin"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageCoach1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Илья" />
+        android:layout_margin="4dp"
+        android:background="@drawable/item_background"
+        android:elevation="4dp"
+        android:paddingBottom="4dp"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/surnameCoach"
-        style="@style/DefaultMargin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:textColor="@android:color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_message"
-        app:layout_constraintStart_toEndOf="@+id/imageCoach1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Киселенко" />
+        <ImageView
+            android:id="@+id/imageCoach1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/t1"
+            tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/nameCoach"
+            style="@style/DefaultMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Илья" />
+
+        <TextView
+            android:id="@+id/surnameCoach"
+            style="@style/DefaultMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageCoach1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Киселенко" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/t2"
         android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/item_background"
+        android:elevation="4dp"
+        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -84,7 +82,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Егор" />
+            android:text="Егор" />
 
         <TextView
             android:id="@+id/surnameCoach2"
@@ -96,21 +94,20 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageCoach2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Радченко" />
+            android:text="Радченко" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/t3"
         android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/item_background"
+        android:elevation="4dp"
+        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -132,7 +129,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach3"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Дмитрий" />
+            android:text="Дмитрий" />
 
         <TextView
             android:id="@+id/surnameCoach3"
@@ -144,21 +141,20 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageCoach3"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Зенеич" />
+            android:text="Зеневич" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/t4"
         android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/item_background"
+        android:elevation="4dp"
+        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -180,7 +176,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach4"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Юля" />
+            android:text="Юля" />
 
         <TextView
             android:id="@+id/surnameCoach4"
@@ -192,21 +188,20 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageCoach4"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Змушко" />
+            android:text="Змушко" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/t5"
         android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/item_background"
+        android:elevation="4dp"
+        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -228,7 +223,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Катенька" />
+            android:text="Катенька" />
 
         <TextView
             android:id="@+id/surnameCoach5"
@@ -240,10 +235,9 @@
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_message"
             app:layout_constraintStart_toEndOf="@+id/imageCoach5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Анушкина" />
+            android:text="Анушкина" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

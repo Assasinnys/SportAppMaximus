@@ -31,7 +31,7 @@
             app:destination="@id/participantChatScreenFragment" />
         <action
             android:id="@+id/action_navigation_chat_to_trainersChatListWindowScreen"
-            app:destination="@id/trainersChatListWindowScreen" />
+            app:destination="@id/trainers_chat_list_fragment" />
     </fragment>
 
     <fragment
@@ -75,7 +75,7 @@
         android:id="@+id/registration_main_fragment"
         android:name="com.example.sportappmaximus.ui.authorization.RegistrationMainFragment"
         android:label="Registration"
-        tools:layout="@layout/fragment_registration_main" >
+        tools:layout="@layout/fragment_registration_main">
         <action
             android:id="@+id/action_registration_main_fragment_to_registration_trainer_fragment"
             app:destination="@id/registration_trainer_fragment" />
@@ -88,7 +88,7 @@
         android:id="@+id/registration_trainer_fragment"
         android:name="com.example.sportappmaximus.ui.authorization.RegistrationTrainerFragment"
         android:label="Registration Trainer"
-        tools:layout="@layout/fragment_registration_trainer" >
+        tools:layout="@layout/fragment_registration_trainer">
         <action
             android:id="@+id/action_registration_trainer_fragment_to_navigation_home"
             app:destination="@id/navigation_home"
@@ -99,17 +99,17 @@
         android:id="@+id/registration_user_fragment"
         android:name="com.example.sportappmaximus.ui.authorization.RegistrationUserFragment"
         android:label="Registration User"
-        tools:layout="@layout/fragment_registration_user" >
+        tools:layout="@layout/fragment_registration_user">
         <action
             android:id="@+id/action_registration_user_fragment_to_navigation_home"
             app:destination="@id/navigation_home"
             app:popUpTo="@id/authorization_fragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/fragment_list_participants"
         android:id="@+id/participantChatScreenFragment"
         android:name="com.example.sportappmaximus.ui.chat.ParticipantsChatListWindowFragment"
-        android:label="ParticipantChatScreenFragment" >
+        android:label="ParticipantChatScreenFragment"
+        tools:layout="@layout/fragment_list_participants">
         <action
             android:id="@+id/action_participantChatScreenFragment_to_chat_window_fragment"
             app:destination="@id/chat_window_fragment" />
@@ -118,26 +118,26 @@
             app:destination="@id/participantChatWidowFragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/fragment_coach_account"
-        android:id="@+id/trainerChatWindowScreen"
-        android:name="com.example.sportappmaximus.ui.chat.TrainerChatWindowScreen"
-        android:label="TrainerChatWindowScreen" />
+        android:id="@+id/trainer_info_fragment"
+        android:name="com.example.sportappmaximus.ui.chat.TrainerInfoFragment"
+        android:label="About Trainer"
+        tools:layout="@layout/fragment_coach_account" />
     <fragment
-        tools:layout="@layout/fragment_choosing_coach"
-        android:id="@+id/trainersChatListWindowScreen"
-        android:name="com.example.sportappmaximus.ui.chat.TrainersChatListWindowScreen"
-        android:label="TrainersChatListWindowScreen" >
+        android:id="@+id/trainers_chat_list_fragment"
+        android:name="com.example.sportappmaximus.ui.chat.TrainersChatListFragment"
+        android:label="Choose a Trainer To Chat With"
+        tools:layout="@layout/fragment_choosing_coach">
         <action
-            android:id="@+id/action_trainersChatListWindowScreen_to_trainerChatWindowScreen"
-            app:destination="@id/trainerChatWindowScreen" />
+            android:id="@+id/action_trainers_chat_list_fragment_to_trainer_info_fragment"
+            app:destination="@id/trainer_info_fragment" />
         <action
-            android:id="@+id/action_trainersChatListWindowScreen_to_chat_window_fragment"
+            android:id="@+id/action_trainers_chat_list_fragment_to_chat_window_fragment"
             app:destination="@id/chat_window_fragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/fragment_member_account"
         android:id="@+id/participantChatWidowFragment"
         android:name="com.example.sportappmaximus.ui.chat.ParticipantChatWidowFragment"
-        android:label="ParticipantChatWidowFragment" />
+        android:label="ParticipantChatWidowFragment"
+        tools:layout="@layout/fragment_member_account" />
 
 </navigation>

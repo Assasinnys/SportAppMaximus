@@ -15,4 +15,8 @@ class ChatWindowViewModel : ViewModel() {
         if (message.trim().isNotEmpty())
             _text.value = _text.value?.plus(listOf("You" to message))
     }
+
+    fun notifyInfo(name: String, surname: String) {
+        _text.value = listOf("Welcome message" to "Welcome to chat with $name $surname")
+    }
 }
