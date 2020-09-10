@@ -15,7 +15,7 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         storeViewModel.text.observe(viewLifecycleOwner, Observer {
-            tv_store.text = it
+            tv_title_hot_goods.text = it
         })
     }
 

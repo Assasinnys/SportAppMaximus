@@ -57,4 +57,8 @@
 
 Источник: https://edunews.ru/professii/obzor/sport/trener.html
 © edunews.ru</string>
+
+    <string name="title_hot_goods">HOT</string>
+    <string name="btn_text_equipment">SPORTS EQUIPMENT</string>
+    <string name="btn_text_food">SPORTS FOOD</string>
 </resources>
