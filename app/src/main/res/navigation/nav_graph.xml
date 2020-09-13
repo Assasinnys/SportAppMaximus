@@ -44,7 +44,11 @@
         android:id="@+id/navigation_store"
         android:name="com.example.sportappmaximus.ui.store.StoreFragment"
         android:label="@string/title_store"
-        tools:layout="@layout/fragment_store" />
+        tools:layout="@layout/fragment_store" >
+        <action
+            android:id="@+id/action_navigation_store_to_store_goods_list_fragment"
+            app:destination="@id/store_goods_list_fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/home_exercise_fragment"
@@ -139,5 +143,10 @@
         android:name="com.example.sportappmaximus.ui.chat.ParticipantInfoFragment"
         android:label="About Participant"
         tools:layout="@layout/fragment_member_account" />
+    <fragment
+        android:id="@+id/store_goods_list_fragment"
+        android:name="com.example.sportappmaximus.ui.store.StoreGoodsListFragment"
+        android:label="@string/title_store"
+        tools:layout="@layout/fragment_store_goods_list"/>
 
 </navigation>
