@@ -41,25 +41,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_goods"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/div_hot" />
-
-    <TextView
-        android:id="@+id/btn_food"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/background_btn_shop"
-        android:drawableEnd="@drawable/ic_arrow_forward_24"
-        android:gravity="center"
-        android:text="@string/btn_text_food"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/btn_equipment"
@@ -74,7 +60,40 @@
         android:text="@string/btn_text_equipment"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/btn_food"
+        app:layout_constraintBottom_toTopOf="@id/btn_sportswear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_sportswear"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_btn_shop"
+        android:drawableEnd="@drawable/ic_arrow_forward_24"
+        android:gravity="center"
+        android:text="@string/btn_text_sportswear"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_other"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/background_btn_shop"
+        android:drawableEnd="@drawable/ic_arrow_forward_24"
+        android:gravity="center"
+        android:text="@string/btn_text_other"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

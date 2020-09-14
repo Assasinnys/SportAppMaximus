@@ -1,14 +1,15 @@
 package com.example.sportappmaximus.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.R
-import com.example.sportappmaximus.model.GoodsModel
+import com.example.sportappmaximus.model.ProductModel
 import kotlinx.android.synthetic.main.item_goods.view.*
 
-class GoodsRecyclerAdapter(var goodsList: MutableList<GoodsModel> = mutableListOf()) :
+class GoodsRecyclerAdapter(var productList: MutableList<ProductModel> = mutableListOf()) :
     RecyclerView.Adapter<GoodsRecyclerAdapter.GoodsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoodsViewHolder {
@@ -16,23 +17,25 @@ class GoodsRecyclerAdapter(var goodsList: MutableList<GoodsModel> = mutableListO
         return GoodsViewHolder(root)
     }
 
-    fun setData(newList: MutableList<GoodsModel>) {
-        goodsList = newList
+    fun setData(newList: MutableList<ProductModel>) {
+        productList = newList
         notifyDataSetChanged()
     }
 
-    override fun getItemCount() = goodsList.size
+    override fun getItemCount() = productList.size
 
     override fun onBindViewHolder(holder: GoodsViewHolder, position: Int) {
-        holder.bind(goodsList[position])
+        holder.bind(productList[position])
     }
 
     class GoodsViewHolder(private val root: View) : RecyclerView.ViewHolder(root) {
 
-        fun bind(goodsModel: GoodsModel) {
+        @SuppressLint("SetTextI18n")
+        fun bind(productModel: ProductModel) {
             root.apply {
-                tv_title_product.text = goodsModel.name
-                tv_description_product.text = goodsModel.description
+                tv_title_product.text = productModel.name
+                tv_description_product.text = productModel.description
+                tv_cost.text = "${productModel.cost} BYN"
             }
         }
     }

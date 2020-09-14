@@ -28,14 +28,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tv_cost"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/iv_product"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Goods Title very very big" />
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text=""
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/iv_product"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_product"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Goods Title" />
+        tools:text="120 BYN" />
 
     <TextView
         android:id="@+id/tv_description_product"

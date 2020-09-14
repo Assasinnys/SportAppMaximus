@@ -29,6 +29,7 @@
     <string name="pref_sql_method_title">Select SQL method</string>
     <string name="btn_edit_description">Edit data</string>
     <string name="btn_delete_description">Delete data</string>
+    <string name="err_connection">Connection error</string>
 
     <string name="update_user_btn_update">Update user</string>
 
@@ -59,6 +60,7 @@
 © edunews.ru</string>
 
     <string name="title_hot_goods">HOT</string>
+    <string name="btn_text_sportswear">SPORTSWEAR</string>
     <string name="btn_text_equipment">SPORTS EQUIPMENT</string>
-    <string name="btn_text_food">SPORTS FOOD</string>
+    <string name="btn_text_other">OTHER</string>
 </resources>
