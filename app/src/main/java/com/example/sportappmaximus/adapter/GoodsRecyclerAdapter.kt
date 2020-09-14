@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.R
 import com.example.sportappmaximus.model.GoodsModel
-import kotlinx.android.synthetic.main.item_hot_goods.view.*
+import kotlinx.android.synthetic.main.item_goods.view.*
 
 class GoodsRecyclerAdapter(var goodsList: MutableList<GoodsModel> = mutableListOf()) :
     RecyclerView.Adapter<GoodsRecyclerAdapter.GoodsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoodsViewHolder {
-        val root = LayoutInflater.from(parent.context).inflate(R.layout.item_hot_goods, parent, false)
+        val root = LayoutInflater.from(parent.context).inflate(R.layout.item_goods, parent, false)
         return GoodsViewHolder(root)
     }
 

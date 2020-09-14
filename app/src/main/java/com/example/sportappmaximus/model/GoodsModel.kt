@@ -5,6 +5,8 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class GoodsModel(
+    @Json(name = "id")
+    val id: Int,
     @Json(name = "name")
     val name: String,
     @Json(name = "description")
@@ -12,7 +14,7 @@ data class GoodsModel(
     @Json(name = "cost")
     val cost: Long,
     @Json(name = "category")
-    val category: CategoryModel,
+    val category: Int,
     @Json(name = "image")
-    val image: String
+    val image: String?
 )

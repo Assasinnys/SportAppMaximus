@@ -37,9 +37,9 @@ class StoreGoodsListViewModel : ViewModel(), DefaultLifecycleObserver {
     override fun onStart(owner: LifecycleOwner) {
         viewModelScope.launch {
             try {
-                val response = retrofit.getGoods(category)
-                if (response.isSuccessful)
-                    _goodsList.value = response.body()?.toMutableList()
+//                val response = retrofit.getGoods(category)
+//                if (response.isSuccessful)
+//                    _goodsList.value = response.body()?.toMutableList()
             } catch (e: IOException) {
                 e.printStackTrace()
             }

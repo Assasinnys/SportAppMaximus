@@ -19,6 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:itemCount="10"
-        tools:listitem="@layout/item_hot_goods" />
+        tools:listitem="@layout/item_goods" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

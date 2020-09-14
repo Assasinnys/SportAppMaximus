@@ -8,5 +8,8 @@ import retrofit2.http.Query
 
 interface Api {
     @GET(GOODS_ENDPOINT)
-    suspend fun getGoods(@Query("category") category: String = ""): Response<List<GoodsModel>>
+    suspend fun getGoods(): Response<List<GoodsModel>>
+
+    @GET(GOODS_ENDPOINT)
+    suspend fun getGoodsWithCategory(@Query("category") category: Int): Response<List<GoodsModel>>
 }
