@@ -1,13 +1,10 @@
 package com.example.sportappmaximus.ui.authorization
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.sportappmaximus.R
-import com.example.sportappmaximus.util.URL_VERIFICATION
 import com.example.sportappmaximus.util.areFieldsValid
 import com.example.sportappmaximus.util.isPasswordsEquals
 import kotlinx.android.synthetic.main.fragment_registration_trainer.*
@@ -32,11 +29,12 @@ class RegistrationTrainerFragment : Fragment(R.layout.fragment_registration_trai
         }
 
         btn_confirm.setOnClickListener {
-            val browseIntent = Intent(Intent.ACTION_VIEW)
-            browseIntent.data = Uri.parse(URL_VERIFICATION)
-            if (browseIntent.resolveActivity(requireContext().packageManager) != null) {
-                startActivity(browseIntent)
-            }
+//            val browseIntent = Intent(Intent.ACTION_VIEW)
+//            browseIntent.data = Uri.parse(URL_VERIFICATION)
+//            if (browseIntent.resolveActivity(requireContext().packageManager) != null) {
+//                startActivity(browseIntent)
+//            }
+            findNavController().navigate(R.id.action_registration_trainer_fragment_to_coachVerificationFragment)
         }
     }
 

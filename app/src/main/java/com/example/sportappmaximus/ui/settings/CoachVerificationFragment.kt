@@ -1,6 +1,7 @@
 package com.example.sportappmaximus.ui.settings
 
 import android.annotation.SuppressLint
+import android.webkit.WebChromeClient
 import androidx.fragment.app.Fragment
 import com.example.sportappmaximus.R
 import com.example.sportappmaximus.util.URL_VERIFICATION
@@ -13,6 +14,7 @@ class CoachVerificationFragment : Fragment(R.layout.fragment_coach_verification)
         super.onStart()
         web_verification.apply {
             settings.javaScriptEnabled = true
+            webChromeClient = WebChromeClient()
             loadUrl(URL_VERIFICATION)
         }
     }
