@@ -133,7 +133,7 @@
     <fragment
         android:id="@+id/trainers_chat_list_fragment"
         android:name="com.example.sportappmaximus.ui.chat.TrainersChatListFragment"
-        android:label="Choose a Trainer To Chat With"
+        android:label="Choose a Coach To Chat With"
         tools:layout="@layout/fragment_choosing_coach">
         <action
             android:id="@+id/action_trainers_chat_list_fragment_to_trainer_info_fragment"
