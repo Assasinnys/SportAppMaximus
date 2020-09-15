@@ -263,7 +263,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Impact training, but it is necessary\n to focus on the dorsal muscle group.\n On the next training session, give your hands a rest."
+        android:text="Impact training, but it is necessary."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 

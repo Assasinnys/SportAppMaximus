@@ -13,5 +13,11 @@ class CalculationFragment : Fragment(R.layout.fragment_calculator) {
         buttonSave.setOnClickListener {
             findNavController().navigate(R.id.action_calculationFragment_to_progress_screen_fragment)
         }
+        buttonDell.setOnClickListener {
+            editCalculator4.setText("")
+            editCalculator2.setText("")
+            editCalculator3.setText("")
+            editCalculator1.setText("")
+        }
     }
 }
