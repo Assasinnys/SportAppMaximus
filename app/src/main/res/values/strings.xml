@@ -39,7 +39,7 @@
     <string name="verified">Verified :</string>
     <string name="pass_confirmation">Pass confirmation</string>
     <string name="save_changes">Save changes</string>
-    <string name="personal_data">Personal data is incredible and close to god</string>
+    <string name="personal_data">The simulator is my home</string>
 
     <string name="app_name">Sport App Maximus</string>
     <string name="title_activity_main2">MainActivity</string>
@@ -108,4 +108,16 @@ Exercise for the lower press. It is performed without lifting the lower back fro
 Exercise to develop the lower press and strengthen the buttocks. As you exhale, lift your hips up, then linger at the top point.\n
         <i> 3 sets of 45-60 seconds</i>
 </string>
+    
+    <string-array name="exercise">
+        <item>1.Pull-ups on the bar</item>
+        <item>2.Side bar</item>
+        <item>3.Lying Leg Raise</item>
+        <item>4.Barbell</item>
+        <item>5.Press</item>
+        <item>6.Dumbbells</item>
+        <item>7.Push ups</item>
+        <item>8.Pull-ups</item>
+    </string-array>
+
 </resources>
