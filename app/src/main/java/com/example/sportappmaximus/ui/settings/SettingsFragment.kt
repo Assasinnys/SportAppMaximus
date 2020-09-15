@@ -20,7 +20,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 //            if (browseIntent.resolveActivity(requireContext().packageManager) != null) {
 //                startActivity(browseIntent)
 //            }
-            findNavController().navigate(R.id.action_navigation_settings_to_coachVerificationFragment)
+            findNavController().navigate(R.id.action_navigation_settings_to_mapFragment)
         }
     }
 }

@@ -16,7 +16,7 @@
 
 
     <string name="add_user_personal_information"> Personal information</string>
-
+    <string name="error_gps_permission">You didn\'t give permission to access your location</string>
 
     <string name="btn_text_buy">Buy</string>
     <string name="btn_user_sign_in">Sign In</string>

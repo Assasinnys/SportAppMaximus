@@ -1,5 +1,11 @@
 package com.example.sportappmaximus.util
 
+import android.Manifest
+import android.content.Context
+import android.content.pm.PackageManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.MainActivity
@@ -7,6 +13,16 @@ import com.example.sportappmaximus.R
 import com.example.sportappmaximus.adapter.ChatRecyclerViewAdapter
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.fragment_chat_window.*
+
+fun Context.isLocationPermissionGranted(): Boolean =
+    ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) ==
+            PackageManager.PERMISSION_GRANTED
+
+fun AppCompatActivity.requestLocationPermission() {
+    ActivityCompat.requestPermissions(
+        this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 12
+    )
+}
 
 fun Fragment.mainActivity() = requireActivity() as MainActivity
 

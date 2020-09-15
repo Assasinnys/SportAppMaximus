@@ -47,8 +47,8 @@
         android:label="@string/title_settings"
         tools:layout="@layout/fragment_settings" >
         <action
-            android:id="@+id/action_navigation_settings_to_coachVerificationFragment"
-            app:destination="@id/coachVerificationFragment" />
+            android:id="@+id/action_navigation_settings_to_mapFragment"
+            app:destination="@id/mapFragment" />
     </fragment>
 
     <fragment
@@ -201,5 +201,9 @@
         android:id="@+id/coachVerificationFragment"
         android:name="com.example.sportappmaximus.ui.settings.CoachVerificationFragment"
         android:label="Coach Verification" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.sportappmaximus.ui.progress.MapFragment"
+        android:label="MapFragment" />
 
 </navigation>

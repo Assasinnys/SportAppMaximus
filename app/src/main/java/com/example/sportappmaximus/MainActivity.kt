@@ -8,6 +8,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.sportappmaximus.util.isLocationPermissionGranted
+import com.example.sportappmaximus.util.requestLocationPermission
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
@@ -28,6 +30,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         nav_view.setupWithNavController(navController)
+        if (!isLocationPermissionGranted()) requestLocationPermission()
     }
 
     override fun onSupportNavigateUp(): Boolean {
