@@ -17,6 +17,7 @@ class ParticipantsChatListFragment : Fragment(R.layout.fragment_list_participant
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupImages()
+        setupDeletions()
         imageParticipants1.setOnClickListener {
             findNavController().navigate(
                 R.id.action_participant_chat_screen_fragment_to_participant_chat_widow_fragment
@@ -70,6 +71,27 @@ class ParticipantsChatListFragment : Fragment(R.layout.fragment_list_participant
                 R.id.action_participant_chat_screen_fragment_to_chat_window_fragment,
                 bundleOf(NAME to nameParticipants7.text, SURNAME to surnameParticipants7.text)
             )
+        }
+    }
+
+    private fun setupDeletions() {
+        imageDel1.setOnClickListener {
+            p1.visibility = View.GONE
+        }
+        imageDel2.setOnClickListener {
+            p2.visibility = View.GONE
+        }
+        imageDel3.setOnClickListener {
+            p3.visibility = View.GONE
+        }
+        imageDel4.setOnClickListener {
+            p4.visibility = View.GONE
+        }
+        imageDel5.setOnClickListener {
+            p5.visibility = View.GONE
+        }
+        imageDel6.setOnClickListener {
+            p6.visibility = View.GONE
         }
     }
 
