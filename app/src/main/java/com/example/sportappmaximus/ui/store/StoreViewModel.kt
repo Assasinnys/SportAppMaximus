@@ -50,9 +50,8 @@ class StoreViewModel : ViewModel(), DefaultLifecycleObserver {
         }
     }
 
-    suspend fun test() {
+    private suspend fun test() {
         val testResult = retrofit.getGoodsTest()
         Log.d("ASD", "Json: ${testResult.string()}")
-
     }
 }

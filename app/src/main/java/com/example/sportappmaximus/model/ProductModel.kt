@@ -14,5 +14,7 @@ data class ProductModel(
     @Json(name = "cost")
     val cost: Long,
     @Json(name = "category")
-    val categoryId: Int
+    val categoryId: Int,
+    @Json(name = "image")
+    val image: String
 )
