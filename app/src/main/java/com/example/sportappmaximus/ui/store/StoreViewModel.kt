@@ -1,5 +1,6 @@
 package com.example.sportappmaximus.ui.store
 
+import android.util.Log
 import androidx.lifecycle.*
 import com.example.sportappmaximus.api.Api
 import com.example.sportappmaximus.model.ProductModel
@@ -38,6 +39,7 @@ class StoreViewModel : ViewModel(), DefaultLifecycleObserver {
                 val productListResponse = retrofit.getGoods()
                 if (productListResponse.isSuccessful) {
                     val goodList = productListResponse.body()
+                    test()
                     _hotGoods.value = goodList?.toMutableList()?.subList(0, 3)
                 }
             } catch (e: IOException) {
@@ -46,5 +48,11 @@ class StoreViewModel : ViewModel(), DefaultLifecycleObserver {
             }
             _isDataLoading.value = false
         }
+    }
+
+    suspend fun test() {
+        val testResult = retrofit.getGoodsTest()
+        Log.d("ASD", "Json: ${testResult.string()}")
+
     }
 }
