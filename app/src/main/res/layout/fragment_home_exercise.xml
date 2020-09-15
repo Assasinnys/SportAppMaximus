@@ -18,12 +18,13 @@
             style="@style/DefaultMargin"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="@id/tv_home_ex1"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_ex1"
             app:layout_constraintEnd_toStartOf="@id/tv_home_ex1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_ex1"
             tools:ignore="ContentDescription"
+            app:layout_constraintHorizontal_weight="1"
             tools:src="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -31,9 +32,14 @@
             style="@style/TextViewDefaultStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/iv_home_ex1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_home_ex2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/iv_home_ex1"
+            app:layout_constraintStart_toEndOf="@+id/iv_home_ex1"
+            app:layout_constraintHorizontal_weight="2"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/title_home_ex_placeholder" />
 
@@ -44,12 +50,13 @@
             style="@style/DefaultMargin"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="@id/tv_home_ex2"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_ex2"
             app:layout_constraintEnd_toStartOf="@id/tv_home_ex2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_home_ex1"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_ex2"
             tools:ignore="ContentDescription"
+            app:layout_constraintHorizontal_weight="1"
             tools:src="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -57,10 +64,15 @@
             style="@style/TextViewDefaultStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/iv_home_ex2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_home_ex3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/iv_home_ex2"
-            app:layout_constraintTop_toTopOf="@id/iv_home_ex2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_ex1"
+            app:layout_constraintHorizontal_weight="2"
             tools:text="@string/title_home_ex_placeholder" />
 
         <!--    3rd -->
@@ -70,11 +82,12 @@
             style="@style/DefaultMargin"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="@id/tv_home_ex3"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_ex3"
             app:layout_constraintEnd_toStartOf="@id/tv_home_ex3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_home_ex2"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_ex3"
+            app:layout_constraintHorizontal_weight="1"
             tools:ignore="ContentDescription"
             tools:src="@tools:sample/avatars" />
 
@@ -83,10 +96,15 @@
             style="@style/TextViewDefaultStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/iv_home_ex3"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_home_ex4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/iv_home_ex3"
-            app:layout_constraintTop_toTopOf="@id/iv_home_ex3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_ex2"
+            app:layout_constraintHorizontal_weight="2"
             tools:text="@string/title_home_ex_placeholder" />
 
         <!--    4th -->
@@ -96,12 +114,13 @@
             style="@style/DefaultMargin"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="@id/tv_home_ex4"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_ex4"
             app:layout_constraintEnd_toStartOf="@id/tv_home_ex4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_home_ex3"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_ex4"
             tools:ignore="ContentDescription"
+            app:layout_constraintHorizontal_weight="1"
             tools:src="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -109,10 +128,13 @@
             style="@style/TextViewDefaultStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/iv_home_ex4"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_home_ex5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/iv_home_ex4"
-            app:layout_constraintTop_toTopOf="@id/iv_home_ex4"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_ex3"
             tools:text="@string/title_home_ex_placeholder" />
 
         <!--    5th -->
@@ -122,12 +144,13 @@
             style="@style/DefaultMargin"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintBottom_toBottomOf="@id/tv_home_ex5"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_ex5"
             app:layout_constraintEnd_toStartOf="@id/tv_home_ex5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_home_ex4"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_ex5"
             tools:ignore="ContentDescription"
+            app:layout_constraintHorizontal_weight="1"
             tools:src="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -135,11 +158,14 @@
             style="@style/TextViewDefaultStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/iv_home_ex5"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/iv_home_ex5"
-            app:layout_constraintTop_toTopOf="@id/iv_home_ex5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_ex4"
+            app:layout_constraintHorizontal_weight="2"
             tools:text="@string/title_home_ex_placeholder" />
 
         <View

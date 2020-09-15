@@ -10,24 +10,52 @@
         android:id="@+id/img_btn_trainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/personal_trainer_logo"
+        android:src="@drawable/ic_trainer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_user"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/personal_trainer_logo"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_trainer"
         tools:ignore="ContentDescription"/>
 
     <ImageButton
         android:id="@+id/img_btn_user"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/beginner_athlete"
+        android:src="@drawable/ic_participant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_btn_trainer"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/beginner_athletes"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_participant"
         tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/text_btn_trainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer registration"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_trainer"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_trainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participant registration"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_user"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_trainer"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_user"
+        app:layout_constraintVertical_bias="0.705" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
