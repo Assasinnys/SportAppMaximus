@@ -1,6 +1,9 @@
 package com.example.sportappmaximus.ui.chat
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -19,10 +22,24 @@ class ChatWindowFragment : Fragment(R.layout.fragment_chat_window) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
+            if (it.getInt(IS_COACH_KEY, PARTICIPANT) == COACH) {
+                setHasOptionsMenu(true)
+            }
             val name = it.getString(NAME, "")
             val surname = it.getString(SURNAME, "")
             chatWindowViewModel.notifyInfo(name, surname)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_chat_window, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.pay) {
+            // TODO go to payment page
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

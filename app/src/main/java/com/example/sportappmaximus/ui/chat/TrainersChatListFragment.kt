@@ -8,6 +8,8 @@ import androidx.navigation.fragment.findNavController
 import coil.api.load
 import coil.transform.CircleCropTransformation
 import com.example.sportappmaximus.R
+import com.example.sportappmaximus.util.COACH
+import com.example.sportappmaximus.util.IS_COACH_KEY
 import com.example.sportappmaximus.util.NAME
 import com.example.sportappmaximus.util.SURNAME
 import kotlinx.android.synthetic.main.fragment_choosing_coach.*
@@ -26,31 +28,31 @@ class TrainersChatListFragment : Fragment(R.layout.fragment_choosing_coach) {
         t1.setOnClickListener {
             findNavController().navigate(
                 R.id.action_trainers_chat_list_fragment_to_chat_window_fragment,
-                bundleOf(NAME to nameCoach.text, SURNAME to surnameCoach.text)
+                bundleOf(NAME to nameCoach.text, SURNAME to surnameCoach.text, IS_COACH_KEY to COACH)
             )
         }
         t2.setOnClickListener {
             findNavController().navigate(
                 R.id.action_trainers_chat_list_fragment_to_chat_window_fragment,
-                bundleOf(NAME to nameCoach2.text, SURNAME to surnameCoach2.text)
+                bundleOf(NAME to nameCoach2.text, SURNAME to surnameCoach2.text, IS_COACH_KEY to COACH)
             )
         }
         t3.setOnClickListener {
             findNavController().navigate(
                 R.id.action_trainers_chat_list_fragment_to_chat_window_fragment,
-                bundleOf(NAME to nameCoach3.text, SURNAME to surnameCoach3.text)
+                bundleOf(NAME to nameCoach3.text, SURNAME to surnameCoach3.text, IS_COACH_KEY to COACH)
             )
         }
         t4.setOnClickListener {
             findNavController().navigate(
                 R.id.action_trainers_chat_list_fragment_to_chat_window_fragment,
-                bundleOf(NAME to nameCoach4.text, SURNAME to surnameCoach4.text)
+                bundleOf(NAME to nameCoach4.text, SURNAME to surnameCoach4.text, IS_COACH_KEY to COACH)
             )
         }
         t5.setOnClickListener {
             findNavController().navigate(
                 R.id.action_trainers_chat_list_fragment_to_chat_window_fragment,
-                bundleOf(NAME to nameCoach5.text, SURNAME to surnameCoach5.text)
+                bundleOf(NAME to nameCoach5.text, SURNAME to surnameCoach5.text, IS_COACH_KEY to COACH)
             )
         }
     }
