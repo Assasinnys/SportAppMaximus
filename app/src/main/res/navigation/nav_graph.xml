@@ -45,7 +45,11 @@
         android:id="@+id/navigation_settings"
         android:name="com.example.sportappmaximus.ui.settings.SettingsFragment"
         android:label="@string/title_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_settings_to_coachVerificationFragment"
+            app:destination="@id/coachVerificationFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_store"
@@ -111,6 +115,9 @@
             android:id="@+id/action_registration_trainer_fragment_to_navigation_home"
             app:destination="@id/navigation_home"
             app:popUpTo="@id/authorization_fragment" />
+        <action
+            android:id="@+id/action_registration_trainer_fragment_to_coachVerificationFragment"
+            app:destination="@id/coachVerificationFragment" />
     </fragment>
 
     <fragment
@@ -186,5 +193,9 @@
         tools:layout="@layout/fragment_payment_screen"
         android:name="com.example.sportappmaximus.ui.store.PaymentScreenFragment"
         android:label="Payment Screen" />
+    <fragment
+        android:id="@+id/coachVerificationFragment"
+        android:name="com.example.sportappmaximus.ui.settings.CoachVerificationFragment"
+        android:label="Coach Verification" />
 
 </navigation>

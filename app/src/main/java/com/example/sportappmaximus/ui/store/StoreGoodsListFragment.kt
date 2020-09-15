@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.R
@@ -30,7 +31,9 @@ class StoreGoodsListFragment : Fragment(R.layout.fragment_store_goods_list) {
     private fun setup() {
         rv_goods.apply {
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-            adapter = GoodsRecyclerAdapter()
+            adapter = GoodsRecyclerAdapter {
+                findNavController().navigate(R.id.action_store_goods_list_fragment_to_paymentScreenFragment)
+            }
         }
     }
 
