@@ -5,6 +5,8 @@ import android.view.View
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import coil.api.load
+import coil.transform.CircleCropTransformation
 import com.example.sportappmaximus.R
 import com.example.sportappmaximus.util.NAME
 import com.example.sportappmaximus.util.SURNAME
@@ -14,6 +16,7 @@ class ParticipantsChatListFragment : Fragment(R.layout.fragment_list_participant
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupImages()
         imageParticipants1.setOnClickListener {
             findNavController().navigate(
                 R.id.action_participant_chat_screen_fragment_to_participant_chat_widow_fragment
@@ -67,6 +70,27 @@ class ParticipantsChatListFragment : Fragment(R.layout.fragment_list_participant
                 R.id.action_participant_chat_screen_fragment_to_chat_window_fragment,
                 bundleOf(NAME to nameParticipants7.text, SURNAME to surnameParticipants7.text)
             )
+        }
+    }
+
+    private fun setupImages() {
+        imageParticipants1.load(R.drawable.p1) {
+            transformations(CircleCropTransformation())
+        }
+        imageParticipants2.load(R.drawable.p2) {
+            transformations(CircleCropTransformation())
+        }
+        imageParticipants3.load(R.drawable.p3) {
+            transformations(CircleCropTransformation())
+        }
+        imageParticipants4.load(R.drawable.p4) {
+            transformations(CircleCropTransformation())
+        }
+        imageParticipants5.load(R.drawable.p5) {
+            transformations(CircleCropTransformation())
+        }
+        imageParticipants6.load(R.drawable.p6) {
+            transformations(CircleCropTransformation())
         }
     }
 }

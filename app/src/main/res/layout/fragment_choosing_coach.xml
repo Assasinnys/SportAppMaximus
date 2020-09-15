@@ -13,15 +13,20 @@
         android:layout_margin="4dp"
         android:background="@drawable/item_background"
         android:elevation="4dp"
-        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageCoach1"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:srcCompat="@drawable/t1"
-            tools:ignore="MissingConstraints" />
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:srcCompat="@drawable/t1" />
 
         <TextView
             android:id="@+id/nameCoach"
@@ -30,12 +35,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:text="Илья"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach1"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Илья" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/surnameCoach"
@@ -44,12 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="40dp"
+            android:text="Киселенко"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach1"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Киселенко" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_t1"
@@ -57,9 +62,9 @@
             android:layout_height="0dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:text="5$/час"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/image_check_mark1"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,15 +87,21 @@
         android:layout_margin="4dp"
         android:background="@drawable/item_background"
         android:elevation="4dp"
-        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageCoach2"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:srcCompat="@drawable/t2"
-            tools:ignore="MissingConstraints" />
+
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:srcCompat="@drawable/t2" />
 
         <TextView
             android:id="@+id/nameCoach2"
@@ -99,12 +110,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:text="Егор"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach2"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Егор" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/surnameCoach2"
@@ -113,12 +124,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="40dp"
+            android:text="Радченко"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach2"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Радченко" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_t2"
@@ -126,9 +137,9 @@
             android:layout_height="0dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:text="7$/час"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/image_check_mark2"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -151,13 +162,18 @@
         android:layout_margin="4dp"
         android:background="@drawable/item_background"
         android:elevation="4dp"
-        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageCoach3"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/t3"
             tools:ignore="MissingConstraints" />
 
@@ -168,12 +184,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:text="Дмитрий"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach3"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Дмитрий" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/surnameCoach3"
@@ -182,15 +198,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="40dp"
+            android:text="Зеневич"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach3"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Зеневич" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_t1"
+            android:id="@+id/text_t3"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginTop="24dp"
@@ -210,13 +226,18 @@
         android:layout_margin="4dp"
         android:background="@drawable/item_background"
         android:elevation="4dp"
-        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageCoach4"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/t4"
             tools:ignore="MissingConstraints" />
 
@@ -227,12 +248,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:text="Юля"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Юля" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/surnameCoach4"
@@ -241,12 +262,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="40dp"
+            android:text="Змушко"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Змушко" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_t4"
@@ -254,9 +275,9 @@
             android:layout_height="0dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:text="4$/час"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/image_check_mark4"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -279,13 +300,18 @@
         android:layout_margin="4dp"
         android:background="@drawable/item_background"
         android:elevation="4dp"
-        android:paddingBottom="4dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageCoach5"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/t5"
             tools:ignore="MissingConstraints" />
 
@@ -296,12 +322,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:text="Катенька"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach5"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Катенька" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/surnameCoach5"
@@ -310,12 +336,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="40dp"
+            android:text="Анушкина"
             android:textColor="@android:color/black"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageCoach5"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Анушкина" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_t5"
@@ -323,9 +349,9 @@
             android:layout_height="0dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:text="10$/час"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/image_check_mark5"
             app:layout_constraintTop_toTopOf="parent" />
 

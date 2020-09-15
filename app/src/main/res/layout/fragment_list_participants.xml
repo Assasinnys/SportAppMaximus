@@ -1,354 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p1"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p1"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Ирина" />
-
-        <TextView
-            android:id="@+id/surnameParticipants"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Телеш" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p2"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p2"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants2"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Андрей" />
-
-        <TextView
-            android:id="@+id/surnameParticipants2"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Титович" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p3"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p3"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants3"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Анастасия" />
-
-        <TextView
-            android:id="@+id/surnameParticipants3"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Весёлкина" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p4"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p4"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants4"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Снежана" />
-
-        <TextView
-            android:id="@+id/surnameParticipants4"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Аркадьевна" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p5"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p5"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants5"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Всеволод" />
-
-        <TextView
-            android:id="@+id/surnameParticipants5"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Корков" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p6"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants6"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p6"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants6"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Антон" />
-
-        <TextView
-            android:id="@+id/surnameParticipants6"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Мухин" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/p7"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:background="@drawable/item_background"
-        android:layout_margin="4dp"
-        android:paddingBottom="4dp"
-        android:elevation="4dp"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageParticipants7"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/p7"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/nameParticipants7"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Виктор" />
-
-        <TextView
-            android:id="@+id/surnameParticipants7"
-            style="@style/DefaultMargin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Полевиков" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/btn_chat_participants"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin"
-        android:layout_marginTop="16dp"
-        android:paddingVertical="8dp"
-        android:text="Перейти в общий чат"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tf_input_gender_trainer" />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            tools:ignore="MissingConstraints">
 
+            <ImageView
+                android:id="@+id/imageParticipants1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@drawable/p1" />
+
+            <TextView
+                android:id="@+id/nameParticipants"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Ирина"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Телеш"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageParticipants2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@drawable/p2" />
+
+            <TextView
+                android:id="@+id/nameParticipants2"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Андрей"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants2"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Титович"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageParticipants3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@drawable/p3" />
+
+            <TextView
+                android:id="@+id/nameParticipants3"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Анастасия"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants3"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Весёлкина"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageParticipants4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@drawable/p4" />
+
+            <TextView
+                android:id="@+id/nameParticipants4"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Снежана"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants4"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Аркадьевна"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageParticipants5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p5"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nameParticipants5"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Всеволод"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants5"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Корков"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageParticipants6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p6"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nameParticipants6"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Антон"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants6"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Мухин"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/p7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/item_background"
+            android:elevation="4dp"
+            android:paddingBottom="4dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageParticipants7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/p7"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nameParticipants7"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Виктор"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/surnameParticipants7"
+                style="@style/DefaultMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Полевиков"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageParticipants7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_chat_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginTop="16dp"
+            android:paddingVertical="8dp"
+            android:text="Перейти в общий чат"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tf_input_gender_trainer" />
+
+    </LinearLayout>
+
+</ScrollView>
