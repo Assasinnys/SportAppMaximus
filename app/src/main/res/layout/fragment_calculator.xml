@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -14,8 +15,9 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/item_background_progress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <EditText
             android:id="@+id/editCalculator1"
@@ -24,9 +26,9 @@
             android:layout_marginStart="24dp"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView8"
-            app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toTopOf="@+id/textView8" />
+            app:layout_constraintBottom_toBottomOf="@+id/textCalculator8"
+            app:layout_constraintStart_toEndOf="@+id/textCalculator8"
+            app:layout_constraintTop_toTopOf="@+id/textCalculator8" />
 
         <EditText
             android:id="@+id/editCalculator2"
@@ -35,9 +37,9 @@
             android:layout_marginStart="24dp"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView6"
-            app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toTopOf="@+id/textView6" />
+            app:layout_constraintBottom_toBottomOf="@+id/textCalculator6"
+            app:layout_constraintStart_toEndOf="@+id/textCalculator6"
+            app:layout_constraintTop_toTopOf="@+id/textCalculator6" />
 
         <EditText
             android:id="@+id/editCalculator3"
@@ -46,9 +48,9 @@
             android:layout_marginStart="24dp"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView7"
-            app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="@+id/textView7"
+            app:layout_constraintBottom_toBottomOf="@+id/textCalculator7"
+            app:layout_constraintStart_toEndOf="@+id/textCalculator7"
+            app:layout_constraintTop_toTopOf="@+id/textCalculator7"
             app:layout_constraintVertical_bias="0.6" />
 
         <EditText
@@ -58,61 +60,136 @@
             android:layout_marginStart="24dp"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toTopOf="@+id/textView5" />
+            app:layout_constraintBottom_toBottomOf="@+id/textCalculator5"
+            app:layout_constraintStart_toEndOf="@+id/textCalculator5"
+            app:layout_constraintTop_toTopOf="@+id/textCalculator5" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textCalculator5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="72dp"
-            android:text="TextView"
+            android:textStyle="bold"
+            android:text="Growth"
             app:layout_constraintEnd_toStartOf="@+id/editCalculator4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/spin" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textCalculator6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="TextView"
+            android:text="Body mass"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@+id/textCalculator5" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textCalculator7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="TextView"
+            android:textStyle="bold"
+            android:text="Number of approaches"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toBottomOf="@+id/textCalculator6" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textCalculator8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="TextView"
+            android:text="Usable weight"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/textCalculator7" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textCalculator9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
             android:layout_marginTop="16dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Select exercise and fill in data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/exercise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textCalculator9"
+            app:layout_constraintTop_toBottomOf="@+id/textCalculator9" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Calculation of the result and markings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMarkings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Workout mark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textEditMarkings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter a description of your workout"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMarkings" />
+
+    <View
+        android:id="@+id/fix_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:text="Save data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEditMarkings" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
