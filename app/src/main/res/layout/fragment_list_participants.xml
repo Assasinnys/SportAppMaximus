@@ -377,7 +377,7 @@
             android:layout_margin="@dimen/default_margin"
             android:layout_marginTop="16dp"
             android:paddingVertical="8dp"
-            android:text="Перейти в общий чат"
+            android:text="Go to general chat"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tf_input_gender_trainer" />
