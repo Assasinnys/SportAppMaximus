@@ -4,5 +4,5 @@
     <color name="colorAccent">#6DFF3838</color>
     <color name="color_tt">#FF8A80</color>
     <color name="color_tp">#CCFF90</color>
-    <color name="color_home_item">#F1C1C1</color>
+    <color name="color_home_item">#6DFF0000</color>
 </resources>
