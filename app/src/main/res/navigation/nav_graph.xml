@@ -146,7 +146,11 @@
         android:id="@+id/trainer_info_fragment"
         android:name="com.example.sportappmaximus.ui.chat.TrainerInfoFragment"
         android:label="About Trainer"
-        tools:layout="@layout/fragment_coach_account" />
+        tools:layout="@layout/fragment_coach_account" >
+        <action
+            android:id="@+id/action_trainer_info_fragment_to_chat_window_fragment"
+            app:destination="@id/chat_window_fragment" />
+    </fragment>
     <fragment
         android:id="@+id/trainers_chat_list_fragment"
         android:name="com.example.sportappmaximus.ui.chat.TrainersChatListFragment"

@@ -60,6 +60,16 @@
                 app:layout_constraintStart_toEndOf="@+id/imageParticipants1"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageDel1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -111,6 +121,16 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageParticipants2"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageDel2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -164,6 +184,16 @@
                 app:layout_constraintStart_toEndOf="@+id/imageParticipants3"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageDel3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -215,6 +245,16 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageParticipants4"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageDel4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -268,6 +308,16 @@
                 app:layout_constraintStart_toEndOf="@+id/imageParticipants5"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageDel5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -319,6 +369,16 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageParticipants6"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageDel6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_block_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

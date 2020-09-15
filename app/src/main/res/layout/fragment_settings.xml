@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginTop="32dp"
-            android:text="@string/btn_validate"
+            android:text="Attach location"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -140,30 +140,6 @@
             app:layout_constraintEnd_toStartOf="@+id/surnameEditTextView"
             app:layout_constraintStart_toEndOf="@+id/ageTextView"
             app:layout_constraintTop_toBottomOf="@+id/surnameTextView" />
-
-        <TextView
-            android:id="@+id/verifiedTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_below="@+id/ageTextView"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_toEndOf="@+id/avatarImageView"
-            android:gravity="center"
-            android:text="@string/verified"
-            app:layout_constraintStart_toEndOf="@+id/avatarImageView"
-            app:layout_constraintTop_toBottomOf="@+id/ageTextView" />
-
-        <EditText
-            android:id="@+id/verifiedEditTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_toEndOf="@+id/verifiedTextView"
-            android:gravity="center"
-            android:text="Confirmed"
-            app:layout_constraintStart_toEndOf="@+id/verifiedTextView"
-            app:layout_constraintTop_toBottomOf="@+id/ageTextView" />
 
 
         <View

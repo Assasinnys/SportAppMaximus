@@ -37,4 +37,6 @@
         app:layout_constraintVertical_bias="0.0"
         tools:text="Chat message" />
 
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
