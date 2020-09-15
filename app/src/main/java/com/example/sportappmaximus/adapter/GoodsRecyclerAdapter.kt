@@ -14,12 +14,12 @@ import com.example.sportappmaximus.model.ProductModel
 import kotlinx.android.synthetic.main.item_goods.view.*
 import java.util.*
 
-class GoodsRecyclerAdapter(private var productList: MutableList<ProductModel> = mutableListOf()) :
+class GoodsRecyclerAdapter(private var productList: MutableList<ProductModel> = mutableListOf(), val clickListener: () -> Unit) :
     RecyclerView.Adapter<GoodsRecyclerAdapter.GoodsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoodsViewHolder {
         val root = LayoutInflater.from(parent.context).inflate(R.layout.item_goods, parent, false)
-        return GoodsViewHolder(root)
+        return GoodsViewHolder(root, clickListener)
     }
 
     fun setData(newList: MutableList<ProductModel>) {
@@ -33,7 +33,13 @@ class GoodsRecyclerAdapter(private var productList: MutableList<ProductModel> = 
         holder.bind(productList[position])
     }
 
-    class GoodsViewHolder(private val root: View) : RecyclerView.ViewHolder(root) {
+    class GoodsViewHolder(private val root: View, val clickListener: () -> Unit) : RecyclerView.ViewHolder(root) {
+
+        init {
+            root.btn_buy.setOnClickListener {
+                clickListener()
+            }
+        }
 
         @SuppressLint("SetTextI18n")
         fun bind(productModel: ProductModel) {

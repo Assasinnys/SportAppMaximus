@@ -31,7 +31,9 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
     private fun setup() {
         rv_hot_goods.apply {
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-            adapter = GoodsRecyclerAdapter()
+            adapter = GoodsRecyclerAdapter {
+                findNavController().navigate(R.id.action_navigation_store_to_paymentScreenFragment)
+            }
         }
 
         btn_sportswear.setOnClickListener {

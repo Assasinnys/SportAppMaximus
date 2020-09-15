@@ -8,6 +8,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportappmaximus.R
@@ -37,7 +38,7 @@ class ChatWindowFragment : Fragment(R.layout.fragment_chat_window) {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.pay) {
-            // TODO go to payment page
+            findNavController().navigate(R.id.action_chat_window_fragment_to_paymentScreenFragment)
         }
         return super.onOptionsItemSelected(item)
     }

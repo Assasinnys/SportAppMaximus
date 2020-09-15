@@ -18,6 +18,7 @@
     <string name="add_user_personal_information"> Personal information</string>
 
 
+    <string name="btn_text_buy">Buy</string>
     <string name="btn_user_sign_in">Sign In</string>
     <string name="btn_sign_up_text">Register now</string>
     <string name="btn_validate">Confirm your status</string>

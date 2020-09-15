@@ -55,6 +55,9 @@
         <action
             android:id="@+id/action_navigation_store_to_store_goods_list_fragment"
             app:destination="@id/store_goods_list_fragment" />
+        <action
+            android:id="@+id/action_navigation_store_to_paymentScreenFragment"
+            app:destination="@id/paymentScreenFragment" />
     </fragment>
 
     <fragment
@@ -67,7 +70,11 @@
         android:id="@+id/chat_window_fragment"
         android:name="com.example.sportappmaximus.ui.chat.ChatWindowFragment"
         android:label="Chat"
-        tools:layout="@layout/fragment_chat_window" />
+        tools:layout="@layout/fragment_chat_window" >
+        <action
+            android:id="@+id/action_chat_window_fragment_to_paymentScreenFragment"
+            app:destination="@id/paymentScreenFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/authorization_fragment"
@@ -154,7 +161,11 @@
         android:id="@+id/store_goods_list_fragment"
         android:name="com.example.sportappmaximus.ui.store.StoreGoodsListFragment"
         android:label="@string/title_store"
-        tools:layout="@layout/fragment_store_goods_list"/>
+        tools:layout="@layout/fragment_store_goods_list">
+        <action
+            android:id="@+id/action_store_goods_list_fragment_to_paymentScreenFragment"
+            app:destination="@id/paymentScreenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/progress_screen_fragment"
         android:name="com.example.sportappmaximus.ui.progress.ProgressScreenFragment"
@@ -163,11 +174,17 @@
     <fragment
         android:id="@+id/calculationFragment"
         android:name="com.example.sportappmaximus.ui.progress.CalculationFragment"
+        tools:layout="@layout/fragment_calculator"
         android:label="Calculation" >
         <action
             android:id="@+id/action_calculationFragment_to_progress_screen_fragment"
             app:destination="@id/progress_screen_fragment"
             app:popUpTo="@id/navigation_progress" />
     </fragment>
+    <fragment
+        android:id="@+id/paymentScreenFragment"
+        tools:layout="@layout/fragment_payment_screen"
+        android:name="com.example.sportappmaximus.ui.store.PaymentScreenFragment"
+        android:label="Payment Screen" />
 
 </navigation>
