@@ -19,7 +19,11 @@
         android:id="@+id/navigation_progress"
         android:name="com.example.sportappmaximus.ui.progress.ProgressFragment"
         android:label="@string/title_progress"
-        tools:layout="@layout/fragment_progress" />
+        tools:layout="@layout/fragment_progress" >
+        <action
+            android:id="@+id/action_navigation_progress_to_progress_screen_fragment"
+            app:destination="@id/progress_screen_fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_chat"
@@ -148,5 +152,10 @@
         android:name="com.example.sportappmaximus.ui.store.StoreGoodsListFragment"
         android:label="@string/title_store"
         tools:layout="@layout/fragment_store_goods_list"/>
+    <fragment
+        android:id="@+id/progress_screen_fragment"
+        android:name="com.example.sportappmaximus.ui.progress.ProgressScreenFragment"
+        tools:layout="@layout/fragment_progress_screen"
+        android:label="@string/title_progress_screen" />
 
 </navigation>
