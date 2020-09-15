@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textProgress1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Daily rates"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <TextView
+        android:id="@+id/textProgress2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Result"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress1"
+        app:layout_constraintStart_toEndOf="@+id/textProgress1"
+        app:layout_constraintTop_toTopOf="@+id/textProgress1" />
+
+    <TextView
+        android:id="@+id/textProgress3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Push ups"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress1" />
+
+    <TextView
+        android:id="@+id/textProgress4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="42"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress3"
+        app:layout_constraintStart_toStartOf="@+id/textProgress2"
+        app:layout_constraintTop_toTopOf="@+id/textProgress3" />
+
+    <TextView
+        android:id="@+id/textProgress5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Bench press"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress3" />
+
+    <TextView
+        android:id="@+id/textProgress6"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="38"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress5"
+        app:layout_constraintStart_toStartOf="@+id/textProgress4"
+        app:layout_constraintTop_toTopOf="@+id/textProgress5" />
+
+    <TextView
+        android:id="@+id/textProgress7"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Stanovaya"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress5" />
+
+    <TextView
+        android:id="@+id/textProgress8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="45"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress7"
+        app:layout_constraintStart_toStartOf="@+id/textProgress6"
+        app:layout_constraintTop_toTopOf="@+id/textProgress7" />
+
+    <TextView
+        android:id="@+id/textProgress9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Assessment"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress2"
+        app:layout_constraintStart_toEndOf="@+id/textProgress2"
+        app:layout_constraintTop_toTopOf="@+id/textProgress2" />
+
+    <TextView
+        android:id="@+id/textProgress10"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Fine"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress4"
+        app:layout_constraintStart_toStartOf="@+id/textProgress9"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress9" />
+
+    <TextView
+        android:id="@+id/textProgress11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Fine"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress6"
+        app:layout_constraintEnd_toEndOf="@+id/textProgress10"
+        app:layout_constraintStart_toStartOf="@+id/textProgress10"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress10" />
+
+    <TextView
+        android:id="@+id/textProgress12"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Fine"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress8"
+        app:layout_constraintEnd_toEndOf="@+id/textProgress11"
+        app:layout_constraintStart_toStartOf="@+id/textProgress11"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress11" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Progress screen"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textProgress13"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Abs exercises"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress7" />
+
+    <TextView
+        android:id="@+id/textProgress14"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="32"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress13"
+        app:layout_constraintStart_toStartOf="@+id/textProgress8"
+        app:layout_constraintTop_toTopOf="@+id/textProgress13" />
+
+    <TextView
+        android:id="@+id/textProgress15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Satisfactorily"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress14"
+        app:layout_constraintStart_toStartOf="@+id/textProgress12"
+        app:layout_constraintTop_toTopOf="@+id/textProgress14" />
+
+    <TextView
+        android:id="@+id/textProgress16"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Total"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress13" />
+
+    <TextView
+        android:id="@+id/textProgress17"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="157"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress16"
+        app:layout_constraintStart_toStartOf="@+id/textProgress14"
+        app:layout_constraintTop_toTopOf="@+id/textProgress16" />
+
+    <TextView
+        android:id="@+id/textProgress18"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/item_background_progress"
+        android:padding="16dp"
+        android:text="Fine"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textProgress17"
+        app:layout_constraintStart_toStartOf="@+id/textProgress15"
+        app:layout_constraintTop_toTopOf="@+id/textProgress17" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Impact training, but it is necessary\n to focus on the dorsal muscle group.\n On the next training session, give your hands a rest."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Notes"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProgress17" />
+
+    <View
+        android:id="@+id/fix_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="230dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

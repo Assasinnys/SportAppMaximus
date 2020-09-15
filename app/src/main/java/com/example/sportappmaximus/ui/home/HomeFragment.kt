@@ -18,6 +18,13 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
+    companion object {
+        const val BACK = 0
+        const val TRICEPS = 1
+        const val LEG = 2
+    }
+
+
     private val homeViewModel: HomeViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -25,12 +32,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         rv_home.apply {
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
             adapter = HomeRecyclerViewAdapter(mutableListOf(
-                ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.kettlebell), "kettlebell"),
-                ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.dumbbell), "dumbbell"),
-                ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.horizontal_bar), "horizontal bar")
+                ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.w1_1), "Back muscle complex"),
+                ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.w1_3), "Triceps Strengthening Complex"),
+                ExerciseModel(BitmapFactory.decodeResource(resources, R.drawable.w1_5), "Complex for the development of leg muscles")
             )) { position, exercise ->
                 findNavController().navigate(R.id.action_navigation_home_to_home_exercise_fragment, bundleOf(
-                    EXERCISE_KEY to exercise))
+                    EXERCISE_KEY to position))
             }
         }
         mainActivity().showNavigationBar()

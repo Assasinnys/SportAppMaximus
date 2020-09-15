@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.sportappmaximus.R
 import com.example.sportappmaximus.model.ExerciseModel
+import com.example.sportappmaximus.ui.home.HomeFragment
 import com.example.sportappmaximus.util.EXERCISE_KEY
 import com.example.sportappmaximus.util.mainActivity
 import kotlinx.android.synthetic.main.fragment_home_exercise.*
@@ -16,17 +17,47 @@ class HomeExerciseFragment : Fragment(R.layout.fragment_home_exercise) {
 
         mainActivity().hideNavigationBar()
 
-        val exerciseModel: ExerciseModel = arguments?.get(EXERCISE_KEY) as ExerciseModel
+        val exerciseType: Int = arguments?.getInt(EXERCISE_KEY)?:0
 
-        iv_home_ex1.setImageBitmap(exerciseModel.image)
-        tv_home_ex1.text = exerciseModel.text
-        iv_home_ex2.setImageBitmap(exerciseModel.image)
-        tv_home_ex2.text = exerciseModel.text
-        iv_home_ex3.setImageBitmap(exerciseModel.image)
-        tv_home_ex3.text = exerciseModel.text
-        iv_home_ex4.setImageBitmap(exerciseModel.image)
-        tv_home_ex4.text = exerciseModel.text
-        iv_home_ex5.setImageBitmap(exerciseModel.image)
-        tv_home_ex5.text = exerciseModel.text
+        when(exerciseType) {
+            HomeFragment.BACK -> {
+                iv_home_ex1.setImageResource(R.drawable.w1_1)
+                tv_home_ex1.setText(R.string.w1)
+                iv_home_ex2.setImageResource(R.drawable.w1_2)
+                tv_home_ex2.setText(R.string.w2)
+                iv_home_ex3.setImageResource(R.drawable.w1_3)
+                tv_home_ex3.setText(R.string.w33)
+                iv_home_ex4.setImageResource(R.drawable.w1_4)
+                tv_home_ex4.setText(R.string.w4)
+                iv_home_ex5.setImageResource(R.drawable.w1_5)
+                tv_home_ex5.setText(R.string.w55)
+            }
+
+            HomeFragment.TRICEPS -> {
+                iv_home_ex1.setImageResource(R.drawable.w1_3)
+                tv_home_ex1.setText(R.string.w11)
+                iv_home_ex2.setImageResource(R.drawable.w1_4)
+                tv_home_ex2.setText(R.string.w22)
+                iv_home_ex3.setImageResource(R.drawable.w1_5)
+                tv_home_ex3.setText(R.string.w33)
+                iv_home_ex4.setImageResource(R.drawable.w1_6)
+                tv_home_ex4.setText(R.string.w4)
+                iv_home_ex5.setImageResource(R.drawable.w1_7)
+                tv_home_ex5.setText(R.string.w55)
+            }
+
+            HomeFragment.LEG -> {
+                iv_home_ex1.setImageResource(R.drawable.w1_5)
+                tv_home_ex1.setText(R.string.w111)
+                iv_home_ex2.setImageResource(R.drawable.w1_6)
+                tv_home_ex2.setText(R.string.w222)
+                iv_home_ex3.setImageResource(R.drawable.w1_8)
+                tv_home_ex3.setText(R.string.w333)
+                iv_home_ex4.setImageResource(R.drawable.w1_9)
+                tv_home_ex4.setText(R.string.w4)
+                iv_home_ex5.setImageResource(R.drawable.w1_10)
+                tv_home_ex5.setText(R.string.w55)
+            }
+        }
     }
 }

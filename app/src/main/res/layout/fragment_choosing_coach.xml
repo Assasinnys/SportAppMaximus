@@ -51,6 +51,28 @@
             app:layout_constraintTop_toTopOf="parent"
             android:text="Киселенко" />
 
+        <TextView
+            android:id="@+id/text_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="5$/час"
+            app:layout_constraintEnd_toStartOf="@+id/image_check_mark1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_check_mark1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check_24" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -97,6 +119,28 @@
             app:layout_constraintStart_toEndOf="@+id/imageCoach2"
             app:layout_constraintTop_toTopOf="parent"
             android:text="Радченко" />
+
+        <TextView
+            android:id="@+id/text_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="7$/час"
+            app:layout_constraintEnd_toStartOf="@+id/image_check_mark2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_check_mark2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -145,6 +189,18 @@
             app:layout_constraintTop_toTopOf="parent"
             android:text="Зеневич" />
 
+        <TextView
+            android:id="@+id/text_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="87dp"
+            android:text="5$/час"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -192,6 +248,28 @@
             app:layout_constraintTop_toTopOf="parent"
             android:text="Змушко" />
 
+        <TextView
+            android:id="@+id/text_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="4$/час"
+            app:layout_constraintEnd_toStartOf="@+id/image_check_mark4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_check_mark4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check_24" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -238,6 +316,28 @@
             app:layout_constraintStart_toEndOf="@+id/imageCoach5"
             app:layout_constraintTop_toTopOf="parent"
             android:text="Анушкина" />
+
+        <TextView
+            android:id="@+id/text_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="10$/час"
+            app:layout_constraintEnd_toStartOf="@+id/image_check_mark5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_check_mark5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

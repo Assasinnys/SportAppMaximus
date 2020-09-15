@@ -54,7 +54,58 @@
     <string name="tp">TP</string>
 
     <string name="t1">Нижегородское областное училище олимпийского резерва им. В.С. Тишина. Колледж физической культуры и спорта, экономики и технологии Санкт-Петербургского государственного университета. Приморское государственное училище (техникум) олимпийского резерва (г. Владивосток). Колледж физической культуры и спорта "Спарта" (г. Москва). Московское среднее специальное училище олимпийского резерва №4 им. А.Я. Гомельского (техникум) Департамента спорта и туризма г. Москвы.
+</string>
 
-Источник: https://edunews.ru/professii/obzor/sport/trener.html
-© edunews.ru</string>
+    <string name="w1"><b>1.Pull-ups on the bar </b>\n
+Basic functional exercise for developing the muscles of the back, shoulder girdle and arms. \n
+        <i>3-4 sets of 8-10 reps</i>
+    </string>
+
+    <string name="w2"><b>2.Exercise "Bicycle" </b>\n
+    One of the best exercises for strengthening core and abdominal muscles. \n
+   <i> 3-4 sets of 10-15 reps</i>
+    </string>
+
+    <string name="w11"><b> 1.Elbow plank</b> \n
+A sophisticated variation of the classic plank exercise. \n
+        Helps to improve posture, strengthen abs and develop the shoulder girdle. \n
+        <i> 3 sets of 45-60 seconds</i>
+    </string>
+
+        <string name="w4"><b>4.Side bar</b>\n
+Exercise for the development of oblique abdominal muscles. \n
+       Try to keep your abdominal muscles tense while doing it.\n
+        <i> 3 sets of 45-60 seconds</i>
+    </string>
+
+    <string name="w111"><b>1.Pushups</b>\n
+        A key exercise for developing the pectoral muscles. At the top, push off the floor as hard as possible, opening your back.\n
+        <i>  3-4 sets of 10-12 reps</i>
+
+</string>
+
+    <string name="w33"><b>3.Reverse push-ups</b>\n
+Exercise to strengthen the muscles of the triceps, forearms and shoulder girdle. At the top point, as if pushing your body weight up.\n
+        <i>3-4 sets of 10-15 reps</i>
+</string>
+
+    <string name="w22"><b>2.Lunges on one leg</b>\n
+Exercise for the muscles of the front of the thigh and for the buttocks. As you exhale, lower yourself down, keeping the body upright and the abs tense.\n
+        <i>3-4 sets of 10-15 reps</i>
+</string>
+
+    <string name="w333"><b>3.Bodyweight squats</b>\n
+A key exercise for developing leg muscles. As you lower yourself down, feel the tension of the abdominal muscles. Rise up as you inhale, opening your chest.\n
+        <i>3-4 sets of 10-12 reps</i>
+</string>
+
+    <string name="w222"><b>2.Lying Leg Raise</b>\n
+Exercise for the lower press. It is performed without lifting the lower back from the floor and with a constant feeling of the press.\n
+        <i>3-4 sets of 10-12 reps</i>
+</string>
+
+    <string name="w55"><b>5.Lying Hip Raise</b>\n
+Exercise to develop the lower press and strengthen the buttocks. As you exhale, lift your hips up, then linger at the top point.\n
+        <i> 3 sets of 45-60 seconds</i>
+</string>
 </resources>
