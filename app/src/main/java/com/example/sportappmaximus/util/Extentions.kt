@@ -18,14 +18,24 @@ fun Fragment.areFieldsValid(viewList: List<TextInputLayout>): Boolean {
     var isValid = true
 
     viewList.forEach {
-        if (it.editText?.text.toString().isEmpty()) {
-            isValid = false
-            it.apply {
-                isErrorEnabled = true
-                error = getString(R.string.err_empty_field)
+        when {
+            it.editText?.text.toString().isEmpty() -> {
+                isValid = false
+                it.apply {
+                    isErrorEnabled = true
+                    error = getString(R.string.err_empty_field)
+                }
             }
-        } else {
-            it.isErrorEnabled = false
+            it.editText?.text.toString().trim().length <= 1 -> {
+                isValid = false
+                it.apply {
+                    isErrorEnabled = true
+                    error = getString(R.string.err_short_data)
+                }
+            }
+            else -> {
+                it.isErrorEnabled = false
+            }
         }
     }
 

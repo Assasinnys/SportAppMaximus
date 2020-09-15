@@ -22,6 +22,7 @@
     <string name="btn_sign_up_text">Register now</string>
     <string name="btn_validate">Confirm your status</string>
     <string name="err_empty_field">Empty field</string>
+    <string name="err_short_data">Your input is too short</string>
     <string name="err_pass_not_equals">Passwords not equals</string>
     <string name="err_invalid_value">Invalid value</string>
     <string name="pref_sort_title">Sort by</string>
