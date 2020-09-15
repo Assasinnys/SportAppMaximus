@@ -26,5 +26,8 @@ class ProgressFragment : Fragment(R.layout.fragment_progress) {
             if (sendIntent.resolveActivity(requireContext().packageManager) != null)
                 startActivity(sendIntent)
         }
+        btn_add_result.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_progress_to_calculationFragment)
+        }
     }
 }
