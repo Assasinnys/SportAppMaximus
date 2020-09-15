@@ -38,7 +38,7 @@ class StoreViewModel : ViewModel(), DefaultLifecycleObserver {
                 val productListResponse = retrofit.getGoods()
                 if (productListResponse.isSuccessful) {
                     val goodList = productListResponse.body()
-                    _hotGoods.value = goodList?.toMutableList()?.subList(0, 2)
+                    _hotGoods.value = goodList?.toMutableList()?.subList(0, 3)
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
